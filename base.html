@@ -1,0 +1,1725 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Программ</title>
+  </head>
+
+  <body>
+<div style="background-color: beige;">
+  <div class="container">
+    <ul class="row pb-5" style="list-style-type: none; text-align: center;">
+
+      <li class="ml-2">
+
+        <p class="mt-2">103 АШ</p>
+
+        <button data-id="ash103" data-value="zalgah" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button data-id="ash103" data-value="taslah" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+
+
+        <p class="mt-2" class="mt-2">ТойС</p>
+        <button data-id="tois103" data-value="zalguur" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button data-id="tois103" data-value="salguur"  class="btn btn-danger btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">103 АШ-н ШуС</p>
+        <button data-id="103shus" data-value="zalgah" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button  data-id="103shus" data-value="taslah" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">103 АШ-н таслуур</p>
+        <button
+          data-id="tasluur103" data-value="tasluurzalgah"
+          class="btn btn-danger btn-sm"
+        >
+          Залгах
+        </button>
+        <button
+          data-id="tasluur103" data-value="tasluurtaslah"
+          class="btn btn-success btn-sm"
+        >
+          Таслах
+        </button>
+        <p class="mt-2">103 ШинС</p>
+        <button  data-id="shins103" data-value="zalguur" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button  data-id="shins103" data-value="salguur" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+      </li>
+
+
+      <li class="ml-5">
+        <p class="mt-2">104 АШ</p>
+        <button onclick="ash104ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="ash104TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2" class="mt-2">ТойС</p>
+        <button onclick="Tois104zalgahbutton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="Tois104taslahbutton()" class="btn btn-danger btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">104 АШ-н ШуС</p>
+        <button onclick="shus104ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shus104TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">104 АШ-н таслуур</p>
+        <button
+          onclick="tasluur104ZalgahButton()"
+          class="btn btn-danger btn-sm"
+        >
+          Залгах
+        </button>
+        <button
+          onclick="tasluur104TaslahButton()"
+          class="btn btn-success btn-sm"
+        >
+          Таслах
+        </button>
+        <p class="mt-2">104 ШинС</p>
+        <button onclick="shins104ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shins104TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+      </li>
+      <li class="ml-5">
+        <p class="mt-2">105 АШ</p>
+        <button onclick="ash105ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+
+        <button onclick="ash105TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+
+        <p class="mt-2" class="mt-2">ТойС</p>
+        <button onclick="Tois105zalgahbutton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="Tois105taslahbutton()" class="btn btn-danger btn-sm">
+          Таслах
+        </button>
+
+        <p class="mt-2">105 АШ-н ШуС</p>
+        <button onclick="shus105ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shus105TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">105 АШ-н таслуур</p>
+        <button
+          onclick="tasluur105ZalgahButton()"
+          class="btn btn-danger btn-sm"
+        >
+          Залгах
+        </button>
+        <button
+          onclick="tasluur105TaslahButton()"
+          class="btn btn-success btn-sm"
+        >
+          Таслах
+        </button>
+        <p class="mt-2">105 ШинС</p>
+        <button onclick="shins105ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shins105TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+      </li>
+      <li class="ml-5">
+        <p class="mt-2">106 АШ</p>
+        <button onclick="ash106ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+
+        <button onclick="ash106TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+
+        <p class="mt-2" class="mt-2">ТойС</p>
+        <button onclick="Tois106zalgahbutton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="Tois106taslahbutton()" class="btn btn-danger btn-sm">
+          Таслах
+        </button>
+
+        <p class="mt-2">106 АШ-н ШуС</p>
+        <button onclick="shus106ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shus106TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+        <p class="mt-2">106 АШ-н таслуур</p>
+        <button
+          onclick="tasluur106ZalgahButton()"
+          class="btn btn-danger btn-sm"
+        >
+          Залгах
+        </button>
+        <button
+          onclick="tasluur106TaslahButton()"
+          class="btn btn-success btn-sm"
+        >
+          Таслах
+        </button>
+        <p class="mt-2">106 ШинС</p>
+        <button onclick="shins106ZalgahButton()" class="btn btn-danger btn-sm">
+          Залгах
+        </button>
+        <button onclick="shins106TaslahButton()" class="btn btn-success btn-sm">
+          Таслах
+        </button>
+      </li>
+    </ul>
+  </div>
+  <svg
+    version="1.1"
+    id="Layer_1"
+    x="0"
+    y="0"
+    viewBox="0 0 1024 768"
+    xml:space="preserve"
+  >
+    <path
+      id="t235gh3"
+      class="gh"
+      d="M820.8 301.7v9.4m3.8.1h-7.1m6.3 3h-5.9m5.1 2.8h-4.3"
+    />
+    <path id="toitTois" class="salguur" d="M174.5 85.1v8.6" />
+    <path
+      id="yach3gh"
+      class="gh"
+      d="M563.8 536v10.2M560 536h7.4m-6.6-2.2h5.9m-.8-2.3h-4.3"
+    />
+    <path
+      class="gh"
+      d="M774.2 707.1v9.9m3.9 0h-7.4m6.3 3.2h-5.6m5.1 2.9h-4.3"
+    />
+    <path
+      id="yach25gh"
+      class="gh"
+      d="M521.6 707.1v9.8m3.6.1h-7.1m6.3 3.2h-5.6m4.9 2.9h-4.3"
+    />
+    <path
+      id="ych19gh"
+      class="gh"
+      d="M846.5 508.1v-9.4m3.6 0H843m6.5-2.8h-5.9m5.2-2.8h-4.3"
+    />
+    <path
+      id="yach24gh"
+      class="gh"
+      d="M70.9 507.7v-9.4m3.6 0h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach22gh"
+      class="gh"
+      d="M110.8 508.2v-9.4m3.8-.1h-7.4m6.6-2.8h-5.9m5.2-2.8h-4.3"
+    />
+    <path
+      id="_x33_5shtgh1"
+      class="gh"
+      d="M763.4 388.2v9.7m3.6 0h-7.1m6.3 2.8h-5.6m5.1 3.1h-4.3"
+    />
+    <path
+      id="_x33_5shtgh2"
+      class="gh"
+      d="M821.7 388.5v9.7m3.8 0h-7.1m6.4 2.8h-5.9m5.1 3.1h-4.3"
+    />
+    <path
+      id="Dornod1Bgh1"
+      class="gh"
+      d="M934.5 388.3v9.7m-3.6 0h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="Dornod1Bgh2"
+      class="gh"
+      d="M983 388.1v9.7m-3.6 0h7.1m-6.3 2.8h5.6m-5.1 2.8h4.6"
+    />
+    <path
+      id="Dornod1Bgh3"
+      class="gh"
+      d="M1006.3 388.3v9.7m-3.3 0h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="Dornod1Agh1"
+      class="gh"
+      d="M934.5 345v9.4m-3.6 0h7.1m-6.6 2.8h5.9m-5.1 3.1h4.3"
+    />
+    <path
+      id="Dornod1Agh2"
+      class="gh"
+      d="M983 345v9.4m-3.6 0h7.1m-6.3 2.8h5.6m-5.1 3.1h4.6"
+    />
+    <path
+      id="Dornod1Agh3"
+      class="gh"
+      d="M1006.3 345v9.4m-3.3 0h7.1m-6.6 2.8h5.9m-5.1 3.1h4.3"
+    />
+    <path
+      id="_x33_5ht2gh1"
+      class="gh"
+      d="M910 294.1v-9.4m3.9 0h-7.4m6.4-2.8h-5.6m4.8-2.8h-4.3"
+    />
+    <path
+      id="_x33_5ht2gh2"
+      class="gh"
+      d="M929.6 294.3v-9.4m3.8 0H926m6.4-2.8h-5.6m4.8-2.8h-4.3"
+    />
+    <path
+      id="olimpBgh1"
+      class="gh"
+      d="M934.5 258.1v9.9m-3.6.1h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="olimpBgh2"
+      class="gh"
+      d="M983 258.2v9.9m-3.6.1h7.1m-6.3 2.8h5.6m-5.1 2.8h4.6"
+    />
+    <path
+      id="olimpBgh3"
+      class="gh"
+      d="M1006.3 258.4v9.9m-3.3 0h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="t135kvgh3"
+      class="gh"
+      d="M821.5 214.7v11.2m3.9.1h-7.1m6.3 2.8h-5.9m5.1 3h-4.3"
+    />
+    <path
+      id="t135kvgh2"
+      class="gh"
+      d="M762.3 214.9v10.7m3.5.3h-7.1m6.6 2.8h-5.9m5.2 3.1h-4.3"
+    />
+    <path
+      id="t135kvgh1"
+      class="gh"
+      d="M738.9 214.8V225m3.6.4h-7.1m6.3 2.8h-5.9m5.2 3.1h-4.3"
+    />
+    <path
+      id="_x33_5NUOgh"
+      d="M374.6 387.2v4.9m3.6 0h-7.1m6.3 2.6h-5.6m5.1 2.8h-4.6"
+      fill="none"
+      stroke="#22d64c"
+      stroke-width=".5"
+      stroke-linecap="square"
+      stroke-miterlimit="10"
+    />
+    <path
+      id="_x31_03gh4"
+      class="gh"
+      d="M55.3 228.7h11m-.1 3.8v-7.4m2.8 6.7v-5.9m2.9 5.1v-4.3"
+    />
+    <path
+      id="_x31_10h1gh1"
+      class="gh"
+      d="M384 262.4h9.7m0 3.5v-7.1m2.8 6.6v-6.1m3.1 5.1v-4.3"
+    />
+    <path
+      id="_x31_10t1gh4"
+      class="gh"
+      d="M384 221.2h9.7m0 3.6v-7.4m2.8 6.6v-5.6m3 4.8v-4.3"
+    />
+    <path
+      id="_x31_05gh4"
+      class="gh"
+      d="M506.6 221.2h9.4m.1 3.6v-7.4m3 6.6v-5.6m2.8 4.8v-4.3"
+    />
+    <path
+      id="_x31_06gh3"
+      class="gh"
+      d="M445.4 140.7h9.7m0 3.5v-7.1m2.8 6.4v-5.6m3.1 5v-4.3"
+    />
+    <path
+      id="_x31_05gh1"
+      class="gh"
+      d="M506.6 101.4h9.7m0 3.6v-7.1m3.1 6.6v-5.9m2.8 5.1v-4.3"
+    />
+    <path
+      id="_x31_05gh2"
+      class="gh"
+      d="M506.6 115.2h9.7m0 3.8v-7.4m3.1 6.7v-5.9m2.8 4.8v-4.1"
+    />
+    <path
+      id="_x31_05gh3"
+      class="gh"
+      d="M506.9 140.7h9.4m0 3.5v-7.1m3.1 6.4v-5.6m2.8 5v-4.3"
+    />
+    <path
+      id="t1110gh3"
+      class="gh"
+      d="M384.1 140.5h9.7m0 3.6V137m2.8 6.3v-5.6m3 5.1v-4.3"
+    />
+    <path
+      id="_x31_03gh1_1_"
+      class="gh"
+      d="M55.3 101.4h11m-.1 3.5v-7.1m2.8 6.6v-5.9m2.9 5.2v-4.3"
+    />
+    <path
+      id="_x31_03gh2"
+      class="gh"
+      d="M55.5 115.3H66m-.1 3.9v-7.4m3 6.6v-5.9m3 4.9v-4.1"
+    />
+    <path
+      id="_x31_03gh3"
+      class="gh"
+      d="M55.3 140.7h10m0 3.5v-7.1m2.8 6.4v-5.6m2.8 5v-4.3"
+    />
+    <path
+      id="yach40gh"
+      class="gh"
+      d="M215.4 707.2v9.9m3.3 0h-7.1m6.6 3.3h-5.9m5.2 2.9h-4.3"
+    />
+    <path id="NUOS1" class="salguur" d="M392.2 369.8h9.1" />
+    <path id="T1SAS" class="salguur" d="M447 366.5v-9.1" />
+    <path
+      id="SurugaAgh4"
+      class="gh"
+      d="M629.3 221.2h10.2m0 3.6v-7.4m3 6.6v-5.6m2.9 4.8v-4.3"
+    />
+    <path
+      id="surugaAgh3"
+      class="gh"
+      d="M629.3 140.7h10.2m0 3.5v-7.1m3 6.4v-5.6m2.9 5v-4.3"
+    />
+    <path
+      id="surugaBgh3"
+      class="gh"
+      d="M568.1 140.7h10.2m0 3.5v-7.1m2.7 6.4v-5.6m3.2 5v-4.3"
+    />
+    <path
+      id="olimpAgh3"
+      class="gh"
+      d="M1006.3 215v10.5m-3.3.2h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="olimpAgh1"
+      class="gh"
+      d="M934.5 214.8v10.7m-3.6.2h7.1m-6.6 2.8h5.9m-5.1 2.8h4.3"
+    />
+    <path
+      id="_x31_10shtgh1"
+      class="gh"
+      d="M294.9 188.9h10.7m0 3.6v-7.4m3.1 6.6v-5.9m3.1 5.2v-4.3"
+    />
+    <path
+      id="t2gh3"
+      class="gh"
+      d="M239.4 140.8h10.7m.1 3.5v-7.1m3 6.4V138m2.8 5v-4.3"
+    />
+    <path
+      id="_x31_04gh3"
+      class="gh"
+      d="M117 140.8h9.9m-.1 3.6v-7.1m3.2 6.3V138m3 5.1v-4.3"
+    />
+    <path
+      id="t1orolt10kv"
+      class="tasarhai"
+      d="M904 542.3h11.5v-12.6H904v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-29.5m0 24.1h9.1m0 0V508m-1.8 0h3.6"
+    />
+    <path
+      class="gh"
+      d="M918.8 508.1v-9.4m3.6 0h-7.1m6.3-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="_x31_0kvSHT"
+      class="tasarhai"
+      d="M506.8 542.3h11.5v-12.6h-11.5z"
+    />
+    <path id="_x33_5SHTshinS2" class="salguur" d="M756.1 384.5h-8.4" />
+    <path
+      id="_x33_5shtshins2gt"
+      class="tasarhai"
+      d="M780.2 384.5h-23.5m0-1.8v3.7m6.7-1.9v3.7m-1.8 0h3.6m10.9-6.5l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.4.5-.4.6v.8l-.1.9m0 0v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m-.9 0h8.3m-1.3 8.2l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.4.5-.4.6v.8l-.1.9m0 0v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m-.9 0h8.3"
+    />
+    <path
+      id="_x33_5NUO"
+      class="tasarhai"
+      d="M374.6 370v10.7m-3 3.2l.2 1 .4 1 .8.8 1.1.4h1l1-.2 1-.6.6-1 .4-1-.2-1-.4-1.1-.6-.8-1-.6h-1.1m-.2 3.1v3.3m0-3.3h-3"
+    />
+    <path id="NUOS-2" class="salguur" d="M349.9 369.8h9" />
+    <path
+      id="_x33_5NuoShin"
+      class="tasarhai"
+      d="M358.9 369.8h33.3m-33.3-1.7v3.6m33.3-3.6v3.6"
+    />
+    <path id="shus106" class="salguur" d="M441.6 122.8v8.7" />
+    <path
+      id="tasluur106"
+      class="ettasarhai"
+      d="M435.9 180.1h11.4v-12.7h-11.4z"
+    />
+    <path
+      id="gt106"
+      class="tasarhai"
+      d="M441.6 167.4v-35.3m-1.8 0h3.6m-7.5 23.6l-.8.1h-.9l-.5.4-.5.4-.4.3v.5l.4.4.5.4.5.3.9.1.8.1m0-6.1l-.8.1h-.9l-.5.4-.5.4-.4.4v.4l.4.4.5.4.5.3.9.3h.8m0-4.2v8.4m5.7-4.2l-.8.1h-.9l-.5.4-.5.4-.3.3v.5l.3.4.5.4.5.3.9.1.8.1m0-6.1l-.8.1h-.9l-.5.4-.5.4-.3.4v.4l.3.4.5.4.5.3.9.3h.8m0-4.2v8.4m5.9-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.9-19.2h3.6m0 1.7v-3.6"
+    />
+    <path
+      id="_x31_06gh1"
+      class="gh"
+      d="M445 101.4h11m0 3.5v-7.1m2.8 6.6v-5.9m3 5.2v-4.3"
+    />
+    <path
+      id="_x31_06gh2"
+      class="gh"
+      d="M445.5 115.4h9.8m0 3.8v-7.4m2.9 6.6v-5.9m3.1 4.9v-4.1"
+    />
+    <path id="shus105" class="salguur" d="M502.9 123.4v8.1" />
+    <path
+      id="tasluur105"
+      class="ettasarhai"
+      d="M497.2 180.1h11.6v-12.7h-11.6z"
+    />
+    <path
+      id="gt105"
+      class="tasarhai"
+      d="M502.9 167.4v-35.3m-1.7 0h3.6m-7.6 23.6l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.7-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.9-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.9-19.2h3.7m0 1.7v-3.6"
+    />
+    <path id="shins105" class="salguur" d="M502.9 229.8v9.1" />
+    <path
+      id="shinsghtai105"
+      class="tasarhai"
+      d="M502.9 180.1v49.5m-1.7-.1h3.6m-1.9-8.4h3.7m0 1.8v-3.7"
+    />
+    <path id="shussurugaB" class="salguur" d="M564.4 123.4v8.1" />
+    <path
+      id="tasluurSurugaB"
+      class="ettasarhai"
+      d="M558.6 180.1h11.6v-12.7h-11.6z"
+    />
+    <path
+      id="gtsurugaB"
+      class="tasarhai"
+      d="M564.4 167.4v-35.3m-1.9 0h3.7m-7.6 23.6l-.8.1h-.9l-.5.4-.5.4-.3.3v.5l.3.4.5.4.5.3.9.1.8.1m0-6.1l-.8.1h-.9l-.5.4-.5.4-.3.4v.4l.3.4.5.4.5.3.9.3h.8m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.5.4-.6.4-.3.3v.5l.3.4.6.4.5.3.8.1.9.1m0-6.1l-.9.1h-.8l-.5.4-.6.4-.3.4v.4l.3.4.6.4.5.3.8.3h.9m0-4.2v8.4m-5.8-19.2h3.6m0 1.7v-3.6"
+    />
+    <path
+      id="_x33_5_olimpbet"
+      class="tasarhai"
+      d="M945.3 260.8h11.6v-12.6h-11.6z"
+    />
+    <path id="OlimpBShuS" class="salguur" d="M990.2 254.5h9" />
+    <path
+      id="_x33_5olimpb"
+      class="tasarhai"
+      d="M999.2 256.3v-3.7m0 1.9h14.4m-7.3 0v3.6m1.9 0h-3.6"
+    />
+    <path
+      id="_x33_5olimpbgt"
+      class="tasarhai"
+      d="M956.9 254.5h33.2m0 1.8v-3.7m-7.1 1.9v3.6m1.7 0h-3.6m-11.3-6.6v-.8l-.1-.9-.4-.5-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.5-.1.9-.1.8m6 0v-.8l-.1-.9-.4-.5-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.5-.1.9-.1.8m4.1 0h-8.3m4.2 8.3v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m6 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3"
+    />
+    <path id="DornodAShinS" class="salguur" d="M920.1 341.1h8.4" />
+    <path id="Dornod1Aet" class="tasarhai" d="M945.3 347.5h11.6v-12.6h-11.6z" />
+    <path id="DornodAShuS" class="salguur" d="M990.7 341.1h8.5" />
+    <path
+      id="_x33_5dornodAshins"
+      class="tasarhai"
+      d="M928.5 339.4v3.6m0-1.9h16.9m-10.9 0v3.6m1.8 0h-3.6"
+    />
+    <path
+      id="_x33_5dornodA"
+      class="tasarhai"
+      d="M999.2 342.9v-3.6m0 1.8h14.4m-7.3 0v3.6m1.9 0h-3.6"
+    />
+    <path
+      id="_x33_5dornodAgt"
+      class="tasarhai"
+      d="M956.9 341.1h33.2m0 1.8v-3.6m-7.1 1.8v3.6m1.7 0h-3.6m-11.3-6.5v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m6 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3m4.2 8.3v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m6 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3"
+    />
+    <path id="DornodBShinS" class="salguur" d="M919.6 384.5h8.9" />
+    <path id="Dornod1Bet" class="tasarhai" d="M945.3 390.8h11.6v-12.7h-11.6z" />
+    <path id="DornodBShuS" class="salguur" d="M990.2 384.5h9" />
+    <path
+      id="_x33_5dornodbshins"
+      class="tasarhai"
+      d="M928.5 382.7v3.6m0-1.8h16.9m-10.9 0v3.6m1.8 0h-3.6"
+    />
+    <path
+      class="gh"
+      d="M439.5 546.5v-9.7m3.5 0h-7.1m6.4-2.8h-5.9m5.1-3.1h-4.3"
+    />
+    <path
+      id="_x31_0kvHt1"
+      class="tasarhai"
+      d="M543.2 533.6h8.7v-18h-8.7v18zm4.3 0v-31.2m5.1-5.3l-.1-1-.4-1.1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.3h-1l-1.1.3-1 .4-.8.6-.9.9-.5.9-.3 1.1-.1 1 .1 1 .3 1 .5 1 .9.8.8.6 1 .5 1.1.3h1l1.1-.3.9-.5.9-.6.8-.8.5-1 .4-1 .1-1zm4.5-5.1v-1l-.4-1-.5-1-.8-.9-.9-.5-1-.5-1.1-.3h-1l-1.1.3-.9.5-.9.5-.8.9-.5 1-.4 1-.1 1 .1 1 .4 1 .5 1 .8.9.9.6.9.4 1.1.3h1l1.1-.3 1-.4.9-.6.8-.9.5-1 .4-1v-1zm-7.9-.6l-.1-1.1-.4-1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.3h-1.1l-1 .3-1 .4-.9.6-.8.9-.5.9-.4 1v2.1l.4 1 .5 1 .8.8.9.6 1 .5 1 .3h1.1l1.1-.3.9-.5.9-.6.8-.8.5-1 .4-1 .1-1z"
+    />
+    <path
+      class="gh"
+      d="M888.3 507.8v-9.4m3.5-.1h-7.4m6.7-2.8h-5.9m5.1-2.8H886"
+    />
+    <path
+      id="_x31_0kvdhtyach19"
+      class="tasarhai"
+      d="M867.8 542.3h11.6v-12.6h-11.6v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.7 2.9m-3.7-4.8l-3.6 3.1m3.6-3.1l3.7 3.1m-3.7 9.5V519m0-1.9v-18m0 12.6h14.7m0 0V508m-1.9 0h3.7m-11.2-14.1l-.1-1.1-.4-1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.3h-1l-1.1.3-1 .4-.9.6-.8.9-.5.9-.3 1-.1 1.1.1 1 .3 1 .5.9.8.9.9.6 1 .4 1.1.3h1l1.1-.3.9-.4.9-.6.8-.9.5-.9.4-1 .1-1zm.2-7.8l-.1-1-.4-1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.4h-1l-1.1.4-1 .4-.8.6-.9.9-.5.9-.3 1-.1 1 .1 1.1.3 1 .5.9.9.9.8.6 1 .4 1.1.3h1l1.1-.3.9-.4.9-.6.8-.9.5-.9.4-1 .1-1.1z"
+    />
+    <path id="_x33_5kv1sekts" class="shin" d="M848.1 170.1v252.8" />
+    <path id="_x33_5kv2rsekts" class="shin" d="M902.1 170.1v252.8" />
+    <path id="OlimpAShinS" class="salguur" d="M920.1 211.2h8.4" />
+    <path class="tasarhai" d="M945.3 217.6h11.6v-12.7h-11.6z" />
+    <path id="olimpAShuS" class="salguur" d="M990.3 211.2h8.9" />
+    <path
+      id="olimpashins"
+      class="tasarhai"
+      d="M928.5 209.3v3.7m0-1.8h16.7m-10.7 0v3.6m1.8 0h-3.6"
+    />
+    <path
+      id="olimpAgh2"
+      class="gh"
+      d="M983 214.8v10.5m-3.6.4h7.1m-6.3 2.8h5.6m-5.1 2.8h4.6"
+    />
+    <path
+      id="_x33_5olimpA"
+      class="tasarhai"
+      d="M999.2 213v-3.7m0 1.9h14.4m-7.3 0v3.6m1.9 0h-3.6"
+    />
+    <path
+      id="olimpagt"
+      class="tasarhai"
+      d="M956.9 211.2h33.2m0 1.8v-3.7m-7.1 1.9v3.6m1.7 0h-3.6m-11.3-6.6v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m6 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3m4.2 8.2v-.8l-.1-.9-.4-.5-.4-.6-.3-.3h-.5l-.4.3-.4.6-.3.5-.1.9-.1.8m6 0v-.8l-.1-.9-.4-.5-.3-.6-.4-.3h-.5l-.4.3-.4.6-.3.5-.1.9-.1.8m4.1 0h-8.3"
+    />
+    <path id="OlimpBShinS" class="salguur" d="M920.1 254.5h8.4" />
+    <path
+      id="_x33_5olimpbshins"
+      class="tasarhai"
+      d="M928.5 254.5h16.7m-10.7 0v3.6m1.8 0h-3.6m-4.2-5.5v3.7"
+    />
+    <path
+      class="gh"
+      d="M629.9 707.2v9.8m3.6 0h-7.1m6.6 3.2h-5.9m5.1 2.9h-4.3M666 707.3v9.8m3.6-.1h-7.1m6.3 3.2h-5.6m5.1 2.9h-4.6"
+    />
+    <path
+      id="yach33"
+      class="tasarhai"
+      d="M651.2 672.7h11.5v12.6h-11.5v-12.6zm5.8 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.8 0h3.6m-10.8-3.7h-9.1m0 0v3.7m-2 8.5h4v-8.4h-4v8.4zm1.9 0v2.7m-2.1 0h4.4m-3.8 1.4h3.3m-2.8 1.3h2.1m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.3-4.8h3.7m-1.9 2.1l-1.8-2.2m1.8 2.2l1.9-2.2m-1.9 2.2v2.8"
+    />
+    <path
+      class="gh"
+      d="M702.1 707.2v9.8m3.6 0h-7.1m6.6 3.2h-5.9m5.1 2.9h-4.3"
+    />
+    <path
+      id="yach35"
+      class="tasarhai"
+      d="M687.3 672.7h11.6v12.6h-11.6v-12.6zm5.9 23.4l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6 4.9l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h8.9m0 0v3.7m-1.8 0h3.6m-10.7-3.7h-9.1m0 0v3.7m-2 8.6h4.2v-8.4h-4.2v8.4zm2.1 0v2.7m-2.3 0h4.4m-3.7 1.3h3.1M683 721h2.1m-3-9.2h4.2m-4.2-2.5h4.2m-4.2 4.4h4.2m5-4.9h3.6m-1.7 2.1l-1.9-2.2m1.9 2.2l1.7-2.2m-1.7 2.2v2.8"
+    />
+    <path
+      class="gh"
+      d="M738.1 707.1v9.9m3.9 0h-7.4m6.3 3.2h-5.6m5.1 2.9h-4.3M593.8 707.2v9.8m3.6 0h-7.1m6.3 3.2H591m4.9 2.9h-4.3"
+    />
+    <path
+      id="yach29"
+      class="tasarhai"
+      d="M579 672.7h11.5v12.6H579v-12.6zm5.8 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.8 0h3.6m-10.8-3.7h-9.1m0 0v3.7m-2 8.6h4v-8.4h-4v8.4zm1.9 0v2.7m-2.1 0h4.4m-3.8 1.3h3.3m-2.8 1.4h2.1m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.3-4.9h3.7m-1.9 2.1l-1.8-2.2m1.8 2.2l1.9-2.2m-1.9 2.2v2.8"
+    />
+    <path
+      id="yach31"
+      class="tasarhai"
+      d="M621 697.9l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h8.9m0 0v3.7m-1.8 0h3.6m-10.7-3.7h-9.1m0 0v3.7m-2 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3 0h4.4m-3.9 1.4h3.3m-2.7 1.3h2.1m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.6m-1.7 2.1l-1.9-2.2m1.9 2.2l1.7-2.2m-1.7 2.2v2.8m-5.9-41h11.6v12.6h-11.6v-12.6zm5.9 23.4l-3.7-3.1m3.7 3.1l3.6-3.1"
+    />
+    <path
+      id="yach37"
+      class="tasarhai"
+      d="M723.4 672.7h11.5v12.6h-11.5v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.7m-11-3.7h-8.9m0 0v3.7m-2.1 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3 0h4.4m-3.8 1.4h3.3m-2.7 1.3h2.3m-3.3-9.2h4m-4-2.5h4m-4 4.4h4m5.3-4.9h3.7m-2 2.1l-1.8-2.2m1.8 2.2l1.9-2.2m-1.9 2.2v2.8"
+    />
+    <path
+      id="yach39"
+      class="tasarhai"
+      d="M759.5 672.7h11.6v12.6h-11.6v-12.6zm5.9 23.4l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6 4.9l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h8.9m0 0v3.7m-1.8 0h3.6m-10.7-3.7h-9.1m0 0v3.7m-2 8.7h4v-8.4h-4v8.4zm1.9 0v2.7m-2.3-.1h4.4m-3.6 1.4h3.3m-3 1.3h2.1m-2.8-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.6m-1.7 2.1l-1.9-2.2m1.9 2.2l1.7-2.2m-1.7 2.2v2.8"
+    />
+    <path
+      class="gh"
+      d="M810.3 707.2v9.8m3.9 0h-7.4m6.3 3.2h-5.6m5.1 2.9h-4.3"
+    />
+    <path
+      id="yach41"
+      class="tasarhai"
+      d="M795.6 672.7h11.6v12.6h-11.6v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7 4.9l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.7m-11-3.7h-8.9m0 0v3.7m-1.9 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.1 0h4.2m-3.8 1.3h3.3m-2.7 1.4h2.3m-3.3-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.6m-2 2.1l-1.7-2.2m1.7 2.2l1.9-2.2m-1.9 2.2v2.8"
+    />
+    <path class="gh" d="M846.5 707.1v9.9m3.6 0H843m6.5 3.2h-5.9m5.2 2.9h-4.3" />
+    <path
+      id="yach43"
+      class="tasarhai"
+      d="M831.7 672.7h11.6v12.6h-11.6v-12.6zm5.9 23.4L834 693m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h8.9m0 0v3.7m-1.8 0h3.6m-10.7-3.7h-9.1m0 0v3.7m-2.2 8.7h4v-8.4h-4v8.4zm2 0v2.7m-2.1-.1h4.2m-3.7 1.4h3.3m-2.9 1.3h2.1m-2.9-9.2h4m-4-2.5h4m-4 4.4h4m5.3-4.9h3.7m-1.7 2.1l-1.9-2.2m1.9 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="_x33_5dornodB"
+      class="tasarhai"
+      d="M999.2 386.3v-3.6m0 1.8h14.4m-7.3 0v3.6m1.9 0h-3.6"
+    />
+    <path
+      id="_x33_5dornodBgt"
+      class="tasarhai"
+      d="M956.9 384.5h33.2m0 1.8v-3.6m-7.1 1.8v3.6m1.7 0h-3.6m-11.3-6.5v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m6 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3m4.2 8.3v-.9l-.1-.8-.4-.6-.4-.5-.3-.3h-.5l-.4.3-.4.5-.3.6v.8l-.1.9m5.9 0v-.9l-.1-.8-.4-.6-.3-.5-.4-.3h-.5l-.4.3-.4.5-.3.6-.1.8-.1.9m4.1 0h-8.3"
+    />
+    <path id="_x33_5T1ShinS" class="salguur" d="M835.2 211.2h-8.5" />
+    <path id="T135et" class="tasarhai" d="M799.9 217.6h-11.6v-12.7h11.6z" />
+    <path id="T135tRs" class="salguur" d="M754.5 211.2h-8.3" />
+    <path
+      id="t135shins"
+      class="tasarhai"
+      d="M826.7 209.4v3.6m0-1.8h-26.9m21.9 0v3.6m-1.4 0h3"
+    />
+    <path
+      id="t135gt"
+      class="tasarhai"
+      d="M788.3 211.2h-33.2m0 1.8v-3.6m7.2 1.8v3.6m-1.8 0h3.6m14.2-6.6v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m.2 0l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.3.6-.4.6-.1.8v.9m-1.2-.1h8.3m-1.3 8.3v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m.2 0l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.4.5-.4.6-.1.8v.9m-1.1 0h8.3"
+    />
+    <path id="_x33_5T2ShinS" class="salguur" d="M835.2 297.8h-8.5" />
+    <path
+      id="_x33_5kVt2et"
+      class="tasarhai"
+      d="M799.9 304.2h-11.6v-12.7h11.6z"
+    />
+    <path id="T235TrS" class="salguur" d="M754.5 297.8h-8.3" />
+    <path
+      id="_x33_5T2shinS"
+      class="tasarhai"
+      d="M826.7 296.1v3.6m0-1.9h-26.9m20.9 0v3.7m-1.6 0h3.6"
+    />
+    <path
+      id="t235gh2"
+      class="gh"
+      d="M762.3 302v9.4m3.5 0h-7.1m6.6 3.1h-5.9m5.2 2.8h-4.3"
+    />
+    <path
+      id="t235gh1"
+      class="gh"
+      d="M738.9 302v9.4m3.6 0h-7.1m6.3 3.1h-5.9m5.2 2.8h-4.3"
+    />
+    <path
+      id="yach27gh"
+      class="gh"
+      d="M557.7 707.2v9.8m3.6 0h-7.1m6.6 3.2h-6.1m5.3 2.9h-4.3"
+    />
+    <path
+      id="yach27"
+      class="tasarhai"
+      d="M542.9 672.7h11.6v12.6h-11.6v-12.6zm5.8 23.4l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7 4.9l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.8 0h3.6m-10.8-3.7h-8.9m-.1 0v3.7m-2.1 8.7h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3-.1h4.4m-3.8 1.4h3.3m-2.7 1.3h2.1m-3.1-9.2h4m-4-2.5h4m-4 4.4h4m5.3-4.9h3.6m-1.8 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach25"
+      class="tasarhai"
+      d="M510.8 708.8h3.7m-1.9 2.1l-1.8-2.2m1.8 2.2l1.9-2.2m-1.9 2.2v2.8m-5.8-41h11.5v12.6h-11.5v-12.6zm5.8 23.4L509 693m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.7 0h3.6"
+    />
+    <path
+      id="yach38gh"
+      class="gh"
+      d="M251.4 707.2v10.5m3.8 0h-7.4m6.6 3.4h-5.6m4.9 3.1h-4.3"
+    />
+    <path
+      id="yach38"
+      class="tasarhai"
+      d="M236.6 672.7h11.6v12.6h-11.6v-12.6zm5.9 23.4l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6 4.9l-3.7-3.1m3.7 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h8.9m0 0v3.7m-1.8 0h3.7m-10.8-3.7h-9.1m0 0v3.7m-2.1 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.1 0h4.2m-3.8 1.4h3.3m-2.5 1.3h2.1m-3.3-9.2h4m-4-2.5h4m-4 4.4h4m5.4-4.9h3.6m-1.8 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach36gh"
+      class="gh"
+      d="M287.6 706.8V717m3.6.1H284m6.4 3.3h-5.9m5.1 3h-4.3"
+    />
+    <path
+      id="yach36"
+      class="tasarhai"
+      d="M272.8 672.7h11.5v12.6h-11.5v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7h-9.1m.1 0v3.7m-1.9 8.6h4v-8.4h-4v8.4zm1.9 0v2.7m-2.1 0h4.2m-3.6 1.3h3.3m-3 1.4h2.3m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.6m-1.9 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach34gh"
+      class="gh"
+      d="M323.7 706.8v10.4m3.6 0h-7.1m6.3 3.4h-5.6m4.8 2.8h-4.3"
+    />
+    <path
+      id="yach34"
+      class="tasarhai"
+      d="M308.8 672.7h11.6v12.6h-11.6v-12.6zm5.8 23.4L311 693m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7h-9.1m.1 0v3.7m-2.2 8.6h4v-8.4h-4v8.4zm2.2 0v2.7m-2.2 0h4.4m-3.8 1.4h3.1m-2.5 1.3h2.1m-3.3-9.2h4m-4-2.5h4m-4 4.4h4m5.5-4.9h3.6m-1.9 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach32gh"
+      class="gh"
+      d="M359.8 705.8v11.1m3.6 0h-7.1m6.3 3.6h-5.9m5.1 3.3h-4.3"
+    />
+    <path
+      id="yach32"
+      class="tasarhai"
+      d="M345 672.7h11.5v12.6H345v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7h-8.9m0 0v3.7m-2 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3 0h4.2m-3.7 1.3h3.3m-2.9 1.3h2.3m-3-9.1h4m-4-2.5h4m-4 4.4h4m5.1-4.9h3.6m-1.8 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach30gh"
+      class="gh"
+      d="M395.9 707v10.2m3.6 0h-7.1m6.3 3.3h-5.6m4.8 3.1h-4.3"
+    />
+    <path
+      id="yach30"
+      class="tasarhai"
+      d="M381.1 672.7h11.5v12.6h-11.5v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7h-9.1m.1 0v3.7m-2 8.6h4v-8.4h-4v8.4zm1.9 0v2.7m-2.1 0h4.4m-3.9 1.3h3.3m-2.7 1.4h2.1m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.6m-1.8 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach28gh"
+      class="gh"
+      d="M432 706.8V717m3.5.1h-7.1m6.4 3.3h-5.9m5.1 3h-4.3"
+    />
+    <path
+      id="yach28"
+      class="tasarhai"
+      d="M417.2 672.7h11.6v12.6h-11.6v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7 4.9l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7H414m0 0v3.7m-2 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3 0h4.4m-3.8 1.3h3.3m-3 1.4h2.3m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.1-4.9h3.6m-1.8 2.1l-1.8-2.2m1.8 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach26gh"
+      class="gh"
+      d="M468.1 706.8V717m3.5.1h-7.1m6.4 3.3h-5.6m5.1 3h-4.6"
+    />
+    <path
+      id="yach26"
+      class="tasarhai"
+      d="M448.3 719.7h3.3m-2.7 1.3h2.1m-3-9.2h4m-4-2.5h4m-4 4.4h4m5.2-4.9h3.7m-1.9 2.1l-1.8-2.2m1.8 2.2l1.9-2.2m-1.9 2.2v2.8m-5.7-41h11.5v12.6h-11.5v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.6m-10.9-3.7h-9m0 0v3.7m-2 8.7h4v-8.4h-4v8.4zm1.9 0v2.7m-2.1-.1h4.4"
+    />
+    <path
+      id="yach8gh"
+      class="gh"
+      d="M359.8 507.6v-9.4m3.6-.1h-7.1m6.3-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach8"
+      class="tasarhai"
+      d="M345 542.3h11.5v-12.6H345v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.6m-10.9 3.7h-8.9m0 0V508m-2-8.5h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.3.1h4.2m-.4-1.4h-3.3m.4-1.5h2.3m-3 9.6h4m-4 2.5h4m-4-4.6h4m5.1 4.9h3.6m-1.8-2l-1.8 2m1.8-2l1.8 2m-1.8-2v-2.8"
+    />
+    <path
+      id="yach6gh"
+      class="gh"
+      d="M395.9 507.8v-9.4m3.6-.1h-7.1m6.3-2.8h-5.6m4.8-2.8h-4.3"
+    />
+    <path
+      id="yach6"
+      class="tasarhai"
+      d="M386.8 517.1v-10.8m-5.7 36h11.5v-12.6h-11.5v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-7.3h9.1m0 0V508m-1.8 0h3.6m-10.9 3.7h-9.1m.1 0V508m-2-8.5h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.1.1h4.4m-.6-1.4h-3.3m.6-1.5h2.1m-3 9.6h4m-4 2.5h4m-4-4.6h4m5.2 4.9h3.6m-1.8-2l-1.8 2m1.8-2l1.8 2m-1.8-2v-2.8"
+    />
+    <path
+      id="yach4"
+      class="tasarhai"
+      d="M428 497.1l-.1-1-.4-1.1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.3h-1.1l-1 .3-1 .4-.9.6-.8.9-.5.9-.4 1.1v2l.4 1 .5 1 .8.8.9.6 1 .5 1 .3h1.1l1.1-.3.9-.5.9-.6.8-.8.5-1 .4-1 .1-1zm4.5-5.1l-.1-1-.3-1-.5-1-.9-.9-.8-.5-1-.5-1.1-.3h-1l-1.1.3-.9.5-.9.5-.9.9-.5 1-.4 1-.1 1 .1 1 .4 1 .5 1 .8.9.9.6.9.4 1.1.3h1l1.1-.3 1-.4.8-.6.9-.9.5-1 .3-1 .2-1zm-8-.6v-1.1l-.4-1-.5-.9-.8-.9-.9-.6-1-.4-1.1-.3h-1l-1.1.3-.9.4-.9.6-.8.9-.5.9-.4 1-.1 1.1.1 1 .4 1 .5 1 .8.8.9.6.9.5 1.1.3h1l1.1-.3 1-.5.9-.6.8-.8.5-1 .4-1v-1zm-5.9 42.2h8.7v-18h-8.7v18zm4.3 0v-31.2"
+    />
+    <path
+      id="_x31_0kvSHS"
+      class="tasarhai"
+      d="M459 519l-3.6 2.8m3.6 31.5l3.6-3.1m-3.6 3.1l-3.6-3.1M459 519l3.6 2.9m-3.6 31.4V519"
+    />
+    <path
+      id="_x31_0kwdht2"
+      class="tasarhai"
+      d="M103.2 493.9l-.1-1.1-.4-1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.3h-1l-1.1.3-1 .4-.9.6-.8.9-.5.9-.4 1v2.1l.4 1 .5.9.8.9.9.6 1 .4 1.1.3h1l1.1-.3.9-.4.9-.6.8-.9.5-.9.4-1 .1-1zm.2-7.8l-.1-1-.4-1-.5-.9-.8-.9-.9-.6-.9-.4-1.1-.4h-1l-1.1.4-1 .4-.9.6-.8.9-.5.9-.4 1v2.1l.4 1 .5.9.8.9.9.6 1 .4 1.1.3h1l1.1-.3.9-.4.9-.6.8-.9.5-.9.4-1 .1-1.1zm-11.2 56.2h11.6v-12.6H92.2v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.7 2.9m-3.7-4.8l-3.6 3.1m3.6-3.1l3.7 3.1m-3.7 9.5V519m0-1.9v-18m0 12.7h12.8m.1 0v-3.7m-1.8 0h3.7"
+    />
+    <path
+      id="oroltt110kV"
+      class="tasarhai"
+      d="M56.1 542.3h11.6v-12.6H56.1v12.6zM62 519l-3.7 2.9M62 519l3.6 2.9m-3.6-4.8l-3.7 3.1m3.7-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-25.8m0 20.4h8.9m0 0V508m-1.8 0h3.6"
+    />
+    <path
+      id="t2n35gt"
+      class="tasarhai"
+      d="M788.3 297.8h-33.2m0 1.9v-3.6m7.2 1.7v3.7m-1.8 0h3.6m14.2-6.5v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m.2 0l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.4.5-.4.6-.1.8v.9m-1.1 0h8.3m-1.3 8.3v-.9l-.3-.8-.3-.6-.4-.5-.4-.3h-.4l-.4.3-.4.5-.4.6v.8l-.1.9m.2 0l-.1-.9-.1-.8-.3-.6-.4-.5-.4-.3h-.5l-.3.3-.3.5-.4.6-.1.8v.9m-1.2 0h8.3"
+    />
+    <path id="_x33_5SHTSHinS1" class="salguur" d="M835.2 384.5h-8.5" />
+    <path
+      id="_x33_5kVSHT"
+      class="tasarhai"
+      d="M791.7 390.9h-11.5v-12.6h11.5z"
+    />
+    <path
+      id="_x33_5shtgtshintal"
+      class="tasarhai"
+      d="M800.8 381.7l-.1-.9-.1-.8-.2-.6-.3-.5-.3-.3h-.4l-.2.3-.3.5-.3.6-.1.8v.9m-.4 0l-.1-.9-.1-.8-.2-.6-.3-.5-.3-.3h-.4l-.2.3-.3.5-.3.6-.1.8v.9m-1.3 0h7.3m-1 8.2l-.1-.9-.1-.8-.2-.6-.3-.5-.3-.3h-.4l-.2.3-.3.5-.3.6-.1.8v.9m-.4 0l-.1-.9-.1-.8-.2-.6-.3-.5-.3-.3h-.4l-.2.3-.3.5-.3.6-.1.8v.9m-1.3 0h7.3m25.2-7.2v3.7m0-1.9h-35.3m30 0v3.7m-1.4 0h3.1"
+    />
+    <path id="_x33_5HT1ShinS" class="salguur" d="M834.4 254.8h-8.7" />
+    <path
+      id="_x33_5ht1gh2"
+      class="gh"
+      d="M840.2 258.5v10.3m-3.6-.1h7.1m-6.3 3h5.9m-5.2 3.2h4.3"
+    />
+    <path
+      id="_x33_5ht1gh1"
+      class="gh"
+      d="M820.6 258.5v10.3m-3.5 0h7.1m-6.4 3h5.9m-5.1 3.2h4.3"
+    />
+    <path
+      id="_x33_5kvht1"
+      class="tasarhai"
+      d="M816.3 244v7.3m9.4 1.7v3.6m-5.1-1.8v3.6m-1.7 0h3.6m-12.3-3.7l-.1-1-.3-1-.5-1-.8-.9-.9-.6-.9-.5-1.1-.3h-1l-1.1.1-1 .4-.9.6-.8.8-.6.8-.5 1-.3 1.1v1l.3 1.1.5.9.6.9.8.8.9.6 1 .4 1.1.1h1l1.1-.3.9-.5.9-.6.8-.9.5-1 .3-1 .1-1zm-7 3.7v-1l-.4-1-.5-1-.8-.8-.8-.8-1-.4-1.1-.3-1-.1-1.1.1-.9.4-1 .6-.8.8-.6.9-.4.9-.3 1.1v1l.3 1.1.4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3 1-.5.8-.6.8-.9.5-.9.4-1v-1.1zm0-7.4l-.1-1.1-.4-1-.5-.9-.6-.9-.9-.8-1-.4-1-.3-1.1-.1-1 .3-1 .3-1 .6-.8.8-.5.9-.5 1-.3 1.1v1l.3 1.1.5.9.5.9.8.8 1 .6 1 .4 1 .1 1.1-.1 1-.3 1-.4.9-.8.6-.8.5-1 .4-1 .1-.9zm22.5 3.8h-15.6m4.4 0v-3.6m-1.9 0h3.7m-3.7 0V244m0 0h3.7m-1.8 0v-1.8m-1.9 0h3.7M813 241h2.9m-2.5-1h2.2m-3 5.7h3.7m-3.7 3.4h3.7m-3.7-1.4h3.7"
+    />
+    <path id="_x33_5HT2ShinS" class="salguur" d="M915.4 297.8h9.2" />
+    <path
+      id="_x33_5kv2rsektsjijig"
+      class="tasarhai"
+      d="M735.5 384.5v-23.6m166.6 23.6L848 360.4m.1 0H735.5m12.2 22.3v3.7m0-1.9h-12.2m166.6 0h17.1m.1-1.8v3.6m-17.4-88.5h-66.1m0-1.7v3.6m66.3-1.9h13.1m.1 1.9v-3.6m4.6-39.8v-3.6m-9.8 45.1v-3.4m1.9-.1h-3.7m-6.2-39.8h3.7m0 0h13.4"
+    />
+    <path
+      id="_x33_5ht2"
+      class="tasarhai"
+      d="M957.8 294.3v-1.1l-.4-1-.5-.9-.8-.9-.8-.8-1-.4-1.1-.3-1-.1-1.1.3-.9.3-1 .6-.8.8-.6.9-.4 1-.3 1v1.1l.3 1 .4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3 1-.4.8-.8.8-.9.5-.9.4-1v-1zm.1 7.4l-.1-1-.3-1-.5-1-.8-.9-.9-.6-.9-.4-1.1-.3-1-.1-1.1.1-1 .4-.9.6-.8.8-.6.9-.4.9-.4 1.1v1l.4 1.1.4 1 .6.9.8.8.9.5 1 .4 1.1.3 1-.1 1.1-.3.9-.5.9-.6.8-.9.5-.9.3-1.1.1-1.1zm-33.3-3.9H940m-4.2 0v3.7m1.8 0h-3.7m3.7 0v7.3m0 0h-3.7m0 0v-7.3m1.9 7.3v1.8m1.8-.1h-3.7m3.3 1.1h-2.8m2.6 1.1h-2.2m2.8-5.9h-3.7m3.7-3.2h-3.7m3.7 1.5h-3.7m-9.3-5.4v-3.6m5 1.7v-3.4m1.9-.1h-3.7m23.1 3.7l-.1-1-.4-1.1-.5-.9-.6-.9-.9-.6-.9-.5-1.1-.3h-1.1l-1 .1-1 .4-.9.5-.9.9-.5.8-.5 1-.3 1.1v1l.3 1.1.5.9.5.9.9.8.9.6 1 .4 1 .1 1.1-.1 1.1-.3.9-.4.9-.6.6-.9.5-1 .4-1 .1-1z"
+    />
+    <path
+      id="ToiTgh1"
+      class="gh"
+      d="M178.4 101.4h11m-.1 3.6v-7.1m2.8 6.6v-5.9m2.8 5.1v-4.3"
+    />
+    <path
+      id="ToiTgh2"
+      class="gh"
+      d="M178.1 115.3h11m0 3.8v-7.4m2.8 6.6v-5.9m2.8 4.9v-4.1"
+    />
+    <path id="Trs110T2" class="salguur" d="M235.9 123.4v8.1" />
+    <path
+      id="tasluur110T2"
+      class="ettasarhai"
+      d="M230 180.1h11.6v-12.6H230v12.6z"
+    />
+    <path
+      id="t2gt"
+      class="tasarhai"
+      d="M235.9 167.4v-35.3m-1.8 0h3.6m-7.6 23.6l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.8-19.2h3.6m-.1 1.7v-3.6"
+    />
+    <path
+      id="t2gh1"
+      class="gh"
+      d="M239.4 101.4h10.7m.1 3.5v-7.1m3 6.6v-5.9m2.8 5.1v-4.3"
+    />
+    <path
+      id="t2gh2"
+      class="gh"
+      d="M239.6 115.3H250m0 3.8v-7.4m3.1 6.7v-5.9m2.8 4.9v-4.1"
+    />
+    <path id="Trs110T1" class="salguur" d="M380.2 123.4v8.1" />
+    <path
+      id="tasluur110T1"
+      class="ettasarhai"
+      d="M374.5 180.1H386v-12.7h-11.5z"
+    />
+    <path
+      id="t1110gt"
+      class="tasarhai"
+      d="M380.2 167.4v-35.3m-1.7 0h3.6m-7.6 23.6l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.7-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.9-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.9-19.2h3.6m0 1.7v-3.6"
+    />
+    <path id="shins110T1" class="salguur" d="M380.2 229.8v9.1" />
+    <path
+      id="_x31_10kvt1shins"
+      class="tasarhai"
+      d="M380.2 180.1v49.5m-1.7-.1h3.6m-1.9-8.4h3.6m0 1.8v-3.7"
+    />
+    <path
+      id="_x31_10t1gh1"
+      class="gh"
+      d="M383.8 101.4h9.7m0 3.6v-7.1m2.8 6.6v-5.9m3.1 5.1v-4.3"
+    />
+    <path
+      id="_x31_10t1gh2"
+      class="gh"
+      d="M384.1 115.2h9.7m0 3.8v-7.4m2.8 6.7v-5.9m3 4.8v-4.1"
+    />
+    <path id="shus104" class="salguur" d="M113.1 123.4v8.1" />
+    <path
+      id="tasluur104"
+      class="ettasarhai"
+      d="M107.3 180.1h11.6v-12.6h-11.6v12.6z"
+    />
+    <path
+      id="gt104"
+      class="tasarhai"
+      d="M113.1 167.4v-35.3m-1.7 0h3.6m-7.7 23.6l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.8-19.2h3.7m0 1.7v-3.6"
+    />
+    <path id="shins104" class="salguur" d="M113.1 195.9v9.3" />
+    <path
+      id="_x31_04gh1"
+      class="gh"
+      d="M117.2 101.4h10m0 3.5v-7.1m3.3 6.6v-5.9m2.9 5.2v-4.3"
+    />
+    <path
+      id="_x31_04gh2"
+      class="gh"
+      d="M116.8 115.3H127m0 3.9v-7.4m3.3 6.6v-5.9m3 4.9v-4.1"
+    />
+    <path
+      id="_x31_04gh4"
+      class="gh"
+      d="M116.8 188.8h9.9m0 3.4v-7.1m2.9 6.4v-5.6m2.7 4.9v-4.2"
+    />
+    <path
+      id="tasluurToit"
+      class="ettasarhai"
+      d="M168.8 180.1h11.5v-12.6h-11.5v12.6z"
+    />
+    <path
+      id="gttoit"
+      class="tasarhai"
+      d="M172.6 94.2h3.7m-1.8 73.2V94.2m0 7.2h3.6m0 1.8v-3.6m-9.3 56.1l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.7-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.5.4-.6.4-.3.3v.5l.3.4.6.4.5.3.8.1.9.1m0-6.1l-.9.1h-.8l-.5.4-.6.4-.3.4v.4l.3.4.6.4.5.3.8.3h.9m0-4.2v8.4m-5.8-44.6h3.6m0 1.9v-3.7"
+    />
+    <path class="103shus salguur" d="M51.7 122.8v8.7" />
+    <path class="tois103 salguur" d="M51.7 84.8v8.7" />
+    <path id="tois104" class="salguur" d="M113.1 84.8v8.7" />
+    <path id="toisT2" class="salguur" d="M235.9 85.3V94" />
+    <path id="toisT1" class="salguur" d="M380.2 84.8v8.7" />
+    <path id="tois106" class="salguur" d="M441.6 84.8v8.7" />
+    <path id="tois105" class="salguur" d="M502.9 84.9v8.7" />
+    <path id="toisSurugaB" class="salguur" d="M564.4 84.9v8.7" />
+    <path id="toisSurugaA" class="salguur" d="M625.8 85v8.7" />
+    <path
+   
+      class="ettasarhai tasluur103"
+      d="M46 180.1h11.6v-12.6H46v12.6z"
+    />
+    <path
+      id=""
+      class="tasarhai gt103"
+      d="M51.7 151.5v8.4m0 7.5v-35.3m-1.8 0h3.6M46 155.7l-.8.1h-.9l-.5.4-.5.4-.3.3v.5l.3.4.5.4.5.3.9.1.8.1m0-6.1l-.8.1h-.9l-.5.4-.5.4-.3.4v.4l.3.4.5.4.5.3.9.3h.8m0-4.2v8.4m5.7-4.2l-.8.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.8.1m0-6.1l-.8.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.8m5.9 0l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m-5.9-19.2h3.6m0 1.7v-3.6"
+    />
+    <path id="110kv2rssh" class="shin" d="M22.1 212.8h624.6" />
+    <path id="110kv1rssh" class="shin" d="M22.1 254.5h623.2" />
+    <path class="salguur shins103" d="M51.7 235.7v8.6" />
+    <path
+      id="shinsghtai103"
+      class="tasarhai"
+      d="M51.7 180.1v55m-1.8-.1h3.6m-1.8-6.2h3.6m0 1.9V227"
+    />
+    <path
+      id="_x31_10kVSHSshin"
+      class="tasarhai"
+      d="M459 499.1h53.6m0 18v-18m-53.6 18l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6-3.1v-18m53.6 19.9l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519"
+    />
+    <path
+      id="yach44gh"
+      class="gh"
+      d="M143.2 706.9v9.4m3.3.1h-7.1m6.6 3h-5.9m5.1 2.8h-4.3"
+    />
+    <path
+      id="yach44"
+      class="tasarhai"
+      d="M128.4 672.7h11.5v12.6h-11.5v-12.6zm5.8 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.9 0h3.6m-10.7-3.7h-9.1m0 0v3.7m-2.1 8.7h4.2v-8.4H123v8.4zm2.1 0v2.7m-2.1-.1h4.2m-3.6 1.4h3.3M124 721h2.3m-3.3-9.2h4.2m-4.2-2.5h4.2m-4.2 4.4h4.2m5.1-4.9h3.7m-1.8 2.1l-1.9-2.2m1.9 2.2l1.8-2.2m-1.8 2.2v2.8"
+    />
+    <path
+      id="yach42gh"
+      class="gh"
+      d="M179.1 707.2v10m3.9-.1h-7.4m6.6 3.3h-5.9m5.1 2.9h-4.3"
+    />
+    <path
+      id="yach42"
+      class="tasarhai"
+      d="M164.4 672.7H176v12.6h-11.6v-12.6zm5.7 23.4l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7 4.9l-3.6-3.1m3.6 3.1l3.7-3.1m-3.7-9.5v10.8m0 1.8v10.8m0-5.4h9.1m0 0v3.7m-1.8 0h3.7m-11-3.7h-8.9m0 0v3.7m-2.1 8.6h4v-8.4h-4v8.4zm2.1 0v2.7m-2.3 0h4.4m-3.8 1.3h3.3m-2.7 1.4h2.3m-3.3-9.2h4m-4-2.5h4m-4 4.4h4m5.4-4.9h3.6m-2 2.1l-1.7-2.2m1.7 2.2l1.9-2.2m-1.9 2.2v2.8"
+    />
+    <path
+      id="yach40"
+      class="tasarhai"
+      d="M204.4 708.8h3.7m-1.7 2.1l-1.9-2.2m1.9 2.2l1.8-2.2m-1.8 2.2v2.8m-5.8-41h11.5v12.6h-11.5v-12.6zm5.8 23.4l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6 4.9l-3.6-3.1m3.6 3.1l3.6-3.1m-3.6-9.5v10.8m0 1.8v10.8m0-5.4h9.1m-.1 0v3.7m-1.9 0h3.6"
+    />
+    <path id="toissh110kv" class="shin" d="M22.1 75.7h625.5" />
+    <path
+      id="surugaBgh1"
+      class="gh"
+      d="M568.2 101.5h9.7m0 3.6V98m2.6 6.6v-5.9m3 5.1v-4.3"
+    />
+    <path
+      id="surugaBgh2"
+      class="gh"
+      d="M568.2 115.2h9.7m0 3.8v-7.4m2.6 6.7v-5.9m3 4.8v-4.1"
+    />
+    <path
+      id="shinatoitjijig"
+      class="tasarhai"
+      d="M439.8 84.8h3.6m59.5-9.1v9.1m-1.7 0h3.6m59.6-9.1v9.1m-1.9 0h3.7m-330.3-9.1v9.1m-1.8 0h3.6m142.5-9.1v9.1m-1.7 0h3.6m59.5-9.1v9.1m-328.5-9.1v9.1m-1.7 0h3.6m59.5-9.1v9.1m-1.9 0h3.7M51.7 75.7v9.1m-1.8 0h3.6m572.3-9.1v9.1m-1.8 0h3.6"
+    />
+    <path id="shussurugaA" class="salguur" d="M625.8 123.4v8.1" />
+    <path
+      id="tasluurSurugaA"
+      class="ettasarhai"
+      d="M620 180.1h11.5v-12.7H620z"
+    />
+    <path
+      id="gtsurugaA"
+      class="tasarhai"
+      d="M625.8 167.4v-35.3m-1.8 0h3.6m-7.6 23.6l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.8l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m0-6.1l-.9.1h-.8l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m0-4.2v8.4m5.8-4.2l-.9.1h-.7l-.6.4-.5.4-.3.3v.5l.3.4.5.4.6.3.8.1.9.1m-.1-6.1l-.9.1h-.7l-.6.4-.5.4-.3.4v.4l.3.4.5.4.6.3.8.3h.9m-.1-4.2v8.4m-5.8-19.2h3.6m-.1 1.7v-3.6"
+    />
+    <path id="shinssurugaA" class="salguur" d="M625.8 229.8v9.1" />
+    <path
+      id="shinsghtaisurugaA"
+      class="tasarhai"
+      d="M624 229.5h3.6m-1.8-49.4v49.5m0-8.5h3.6m-.1 1.8v-3.7"
+    />
+    <path
+      id="surugaAgh1"
+      class="gh"
+      d="M629.3 101.4h10.2m0 3.5v-7.1m3 6.6v-5.9m2.9 5.2v-4.3"
+    />
+    <path
+      id="surugaAgh2"
+      class="gh"
+      d="M629.3 115.3h9.7m0 3.9v-7.4m2.8 6.6v-5.9m2.8 4.9v-4.1"
+    />
+    <path
+      id="shinsghtai104"
+      class="tasarhai"
+      d="M111.4 195.9h3.6m-1.9-7.2h3.7m0 1.8v-3.7m-3.7 9.1v-15.8"
+    />
+    <path id="toitshins2" class="salguur" d="M174.5 195.9v9.3" />
+    <path
+      id="ToiTgh3"
+      class="gh"
+      d="M178.1 188.8h11m0 3.6V185m2.8 6.6v-5.9m2.8 5.1v-4.3"
+    />
+    <path id="toitshins1" class="salguur" d="M174.5 235v9.3" />
+    <path
+      id="ToiTgh4"
+      class="gh"
+      d="M178.2 228.7h11m-.1 3.8v-7.4m2.8 6.7v-5.9m2.8 5.1v-4.3"
+    />
+    <path
+      id="toitshins2ghtai"
+      class="tasarhai"
+      d="M172.6 195.9h3.7m-1.8-7.2h3.6m0 1.8v-3.7m-3.6 9.1v-15.8m0 8.6h-7.3m.1 0v33.9m5.3 12.4h3.7m-1.8-6.2h3.6m0 1.9V227m-3.6-4.3h-7.3m7.3 0V235"
+    />
+    <path id="shins110T2" class="salguur" d="M235.9 195.9v9.3" />
+    <path
+      id="t2gh4"
+      class="gh"
+      d="M239.4 188.8h10.3m.1 3.6V185m3 6.6v-5.9m2.8 5.1v-4.3"
+    />
+    <path
+      id="shins110T2ghtai"
+      class="tasarhai"
+      d="M234.1 195.9h3.6m-1.8-7.2h3.6m-.1 1.8v-3.7m-3.5 9.1v-15.8"
+    />
+    <path id="shins110ht2" class="salguur" d="M235.9 268.1v8.6" />
+    <path
+      id="ht2gh1"
+      class="gh"
+      d="M239.7 262.3h11m0 3.6v-7.1m3.2 6.6v-6.1m3 5.1V260"
+    />
+    <path
+      id="ht2gh2"
+      class="gh"
+      d="M239.8 281.8h10.7m0 3.6v-7.1m3.1 6.6V279m2.8 5.1v-4.3"
+    />
+    <path
+      id="ht2110"
+      class="tasarhai"
+      d="M234.1 276.7h3.6m-1.8 0l-.1 15.6m.1-10.5h3.6m-.1 1.8V280m1.7 17.7l-.1-1-.3-1-.6-1-.6-.9-.9-.6-.9-.4-1.1-.4h-1l-1.1.1-1 .4-.9.6-.9.8-.5.9-.5.9-.3 1.1v1l.3 1.1.5 1 .5.8.9.9.9.5 1 .4 1.1.1h1l1.1-.3.9-.5.9-.6.6-.9.6-.9.3-1.1.1-1zm3.7 7v-1l-.4-1-.5-.9-.8-.9-.9-.8-.9-.4-1.1-.3-1-.1-1.1.1-.9.4-1 .6-.8.8-.6.9-.4.9-.3 1.1v1.1l.3 1 .4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3.9-.4.9-.8.8-.9.5-.9.4-1v-1zm-7.4 0l-.1-1-.4-1-.5-.9-.6-.9-.9-.8-1-.4-1.1-.3-1-.1-1.1.1-.9.4-1 .6-.8.8-.6.9-.4.9-.3 1.1v1.1l.3 1 .4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3 1-.4.9-.8.6-.9.5-.9.4-1 .1-1z"
+    />
+    <path
+      id="tasluur110SHT"
+      class="ettasarhai"
+      d="M285.5 160.4h11.6v-12.6h-11.6z"
+    />
+    <path id="shins1SHT110" class="salguur" d="M291.3 235v9.3" />
+    <path
+      id="_x31_10SHTgh2"
+      class="gh"
+      d="M295.2 228.8h10.3m0 3.9v-7.4m3.1 6.6V226m3 5.1v-4.3"
+    />
+    <path
+      id="gtSHT1"
+      class="tasarhai"
+      d="M291.3 108.1h54.2m0 0v114.5M289.6 235h3.6m-1.9-6.2h3.6m0 1.9V227m-3.6-4.3V235m0-12.3h54.2m-54.2-74.9v-39.7m-5.7 28.2l-.9.1-.8.1-.6.4-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-6h-.9l-.8.1-.6.4-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.2v8.3m5.7-4.2l-.9.1-.8.1-.6.5-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-6.1h-.9l-.8.1-.6.4-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.2v8.3m5.9-4.2l-.9.1-.8.1-.6.4-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-6h-.9l-.8.1-.6.4-.5.3-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.2v8.3"
+    />
+    <path id="shins2SHT110" class="salguur" d="M291.3 196.6v8.6" />
+    <path
+      id="gtSHT2"
+      class="tasarhai"
+      d="M291.3 195.9v-35.5m-5.7 10l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.3.6.3.8.3h.9m0-6.2l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.1v8.3m5.7-4.2l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.3.6.3.8.3h.9m0-6.2l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.1v8.3m5.9-4.2l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.3.6.3.8.3h.9m0-6.2l-.9.1-.8.1-.6.3-.5.4-.3.4v.4l.3.5.5.4.6.3.8.1.9.1m0-4.1v8.3m-7.6 21.3h3.6m-1.9-7.2h3.6m0 1.8v-3.7"
+    />
+    <path id="shins106" class="salguur" d="M441.6 195.9v9.3" />
+    <path
+      id="_x31_06gh4"
+      class="gh"
+      d="M445.3 188.8h10.2m0 3.6V185m3.1 6.6v-5.9m3.3 5.1v-4.3"
+    />
+    <path
+      id="shinsghtai106"
+      class="tasarhai"
+      d="M439.8 195.9h3.6m-1.8-7.2h3.6m0 1.8v-3.7m-3.6 9.1v-15.8"
+    />
+    <path id="shinssurugaB" class="salguur" d="M564.4 195.9v9.3" />
+    <path
+      id="surugaBgh4"
+      class="gh"
+      d="M568 188.9h10.1m0 3.5V185m2.6 6.7v-5.9m3.2 5.1v-4.3"
+    />
+    <path
+      id="110kv2rsshjijig"
+      class="tasarhai"
+      d="M111.4 205.2h3.6m-1.9 0v7.7m59.5-7.7h3.7m-1.8 0v7.7m59.6-7.7h3.6m-1.8 0v62.2m-1.8 0h3.6m-1.8-5.1h3.6m-.1 1.8v-3.6m50.2-55.3h3.6m-1.9 0v7.7m148.5-7.7h3.6m-1.8 0v7.7m120.9-7.7h3.7m-1.8 0v7.7"
+    />
+    <path
+      id="shinsghtaisurugaB"
+      class="tasarhai"
+      d="M562.5 195.9h3.7m-1.8-7.2h3.6m0 1.8v-3.7m-3.6 9.1v-15.8"
+    />
+    <path
+      class="tasarhai ash103 "
+      d="M44.6,108.5h7.1 M44.6,62.7v45.8 M49.9,62.7V70 M39.1,62.7V70"
+    />
+    <path
+      
+      class="tasarhai ash103"
+      d="M51.7,115.3h3.6 M55.3,117.2v-3.7 M51.7,122.8V94.2 M51.7,101.4h3.6 M55.3,103.2v-3.6 M49.9,94.2
+      h3.6 M49.9,122.8h3.6"
+    />
+
+    <path
+      id="ash104"
+      class="tasarhai"
+      d="M105.9 108.5h7.1m.1 14.3V94.2m0 7.2h3.7m0 1.8v-3.6m-5.4-5.4h3.6m-3.6 28.6h3.6m-1.9-7.5h3.7m0 1.9v-3.7m-10.9-50.8v45.8m5.5-45.8V70m-11-7.3V70"
+    />
+    <path
+      id="ash106"
+      class="tasarhai"
+      d="M434.5 108.5h7.1m-1.8-14.3h3.6m-3.6 28.6h3.6m-1.8-7.5h3.6m0 1.9v-3.7m-3.6 9.3V94.2m0 7.2h3.6m0 1.8v-3.6m-10.7-36.9v45.8m5.3-45.8V70M429 62.7V70"
+    />
+    <path
+      id="ash105"
+      class="tasarhai"
+      d="M506.6 103.2v-3.6m-10.8 8.9h7.1m0 14.3V94.2m0 7.2h3.7m-5.4-7.2h3.6m-3.6 28.6h3.6m-1.9-7.5h3.7m0 1.9v-3.7m-10.8-50.8v45.8m5.4-45.8V70m-10.9-7.3V70"
+    />
+    <path
+      id="ashsurugaB"
+      class="tasarhai"
+      d="M568 117.2v-3.7m-10.9-5h7.3m0 14.3V94.2m0 7.2h3.6m0 1.8v-3.6m-5.5-5.4h3.7m-3.7 28.6h3.7m-1.8-7.5h3.6m-10.9-52.6v45.8m5.4-45.8V70m-10.7-7.3V70"
+    />
+    <path
+      id="ashsurugaA"
+      class="tasarhai"
+      d="M618.5 108.5h7.3m0 14.3V94.2m0 7.2h3.6m-.1 1.8v-3.6m-5.3-5.4h3.6m-3.6 28.6h3.6m-1.8-7.5h3.6m-.1 1.9v-3.7m-10.8-50.8v45.8m5.5-45.8V70m-10.9-7.3V70"
+    />
+    <path
+      id="yach16gh"
+      class="gh"
+      d="M215.4 508v-9.4m3.3 0h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach14gh"
+      class="gh"
+      d="M251.4 507.8v-9.4m3.8 0h-7.4m6.6-2.8h-5.6m4.9-2.8h-4.3"
+    />
+    <path
+      id="ych14"
+      class="tasarhai"
+      d="M231.3 503.4h4m-4 2.5h4m-4-4.6h4m1.3 41h11.6v-12.6h-11.6v12.6zm5.9-23.3l-3.7 2.9m3.7-2.9l3.6 2.9m-3.6-4.8l-3.7 3.1m3.7-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h8.9m0 0V508m-1.8 0h3.7m-10.8 3.7h-9.1m0 0V508m-2.1-8.5h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.1.1h4.2m-.6-1.4h-3.3m.8-1.5h2.1m6.2 12.4h3.6m-1.8-2l-1.8 2m1.8-2l1.8 2m-1.8-2v-2.8"
+    />
+    <path
+      id="yach12gh"
+      class="gh"
+      d="M287.6 507.9v-9.4m3.6 0H284m6.4-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach12"
+      class="tasarhai"
+      d="M272.8 542.3h11.5v-12.6h-11.5v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.6m-10.9 3.7h-9.1m.1 0V508m-2-8.5h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.1.1h4.2m-.3-1.4h-3.3m.4-1.5h2.3m-3.1 9.6h4m-4 2.5h4m-4-4.6h4m5.3 4.9h3.6m-1.9-2l-1.8 2m1.8-2l1.8 2m-1.8-2v-2.8"
+    />
+    <path
+      id="yach10gh"
+      class="gh"
+      d="M323.7 507.9v-9.4m3.6 0h-7.1m6.3-2.8h-5.6m4.8-2.8h-4.3"
+    />
+    <path
+      id="yach10"
+      class="tasarhai"
+      d="M303.4 505.9h4m-4-4.6h4m5.5 4.9h3.6m-1.9-2l-1.8 2m1.8-2l1.8 2m-1.8-2v-2.8m-5.8 40.9h11.6v-12.6h-11.6v12.6zm5.8-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.6m-10.9 3.7h-9.1m.1 0V508m-2.2-8.4h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.1 0h4.4m-.8-1.4h-3m.5-1.5h2.1m-3.2 9.6h4"
+    />
+    <path id="shins110ht1" class="salguur" d="M380.2 267.4v9.3" />
+    <path
+      id="110kv1rsshjijig"
+      class="tasarhai"
+      d="M501.2 238.9h3.6m-1.9 0v15.7m-124.4-15.7h3.6m-1.9 0v15.7M49.9 244.3h3.6m-1.8 0v10.2M624 238.9h3.6m-1.8 0v15.7m-453.2-10.3h3.7m-1.8 0v10.2m115.1-10.2h3.6m-1.9 0v10.2m88.9 0v12.9m-1.7 0h3.6m-1.9-5.1h3.6m0 1.8v-3.6"
+    />
+    <path
+      id="_x31_10ht1gh2"
+      class="gh"
+      d="M384.1 281.8h9.7m0 3.6v-7.1m2.8 6.6V279m3.1 5.1v-4.3"
+    />
+    <path
+      id="ht1110"
+      class="tasarhai"
+      d="M378.5 276.7h3.6m-1.9 5.1h3.6m0 1.8V280m1.8 17.7l-.1-1-.4-1-.5-1-.6-.9-.9-.6-1-.4-1-.4H380l-1.1.1-.9.4-1 .6-.8.8-.6.9-.6.8-.3 1.1v1l.3 1.1.4 1 .6.8.8.9 1 .5.9.4 1.1.1h1.1l1-.3 1-.5.9-.6.6-.9.5-.9.4-1.1.3-.9zm3.6 7v-1l-.4-1-.5-.9-.8-.9-.8-.8-1-.4-1.1-.3-1-.1-1.1.1-.9.4-1 .6-.8.8-.6.9-.4.9-.3 1.1v1.1l.3 1 .4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3 1-.4.8-.8.8-.9.5-.9.4-1v-1zm-7.4 0l-.1-1-.4-1-.5-.9-.6-.9-.9-.8-1-.4-1.1-.3-1-.1-1.1.1-.9.4-1 .6-.8.8-.6.9-.4.9-.3 1.1v1.1l.3 1 .4 1 .6.9.8.8 1 .6.9.3 1.1.3 1-.1 1.1-.3 1-.4.9-.8.6-.9.5-.9.4-1 .1-1zm-1.6-28v15.6"
+    />
+    <path
+      id="yach13gh"
+      class="gh"
+      d="M738.1 508.1v-9.4m3.9 0h-7.4m6.3-2.8h-5.6m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach15gh"
+      class="gh"
+      d="M774.3 508.1v-9.4m3.6 0h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach15"
+      class="tasarhai"
+      d="M759.5 542.3h11.6v-12.6h-11.6v12.6zm5.9-23.3l-3.7 2.9m3.7-2.9l3.6 2.9m-3.6-4.8l-3.7 3.1m3.7-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h8.9m0 0V508m-1.8 0h3.6m-10.7 3.7h-9.1m0 0V508m-1.9-8.4h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.3 0h4.4m-.5-1.5h-3.3m.6-1.4h2.1m-2.9 9.6h4m-4 2.5h4m-4-4.6h4m5.1 4.9h3.6m-1.7-2l-1.9 2m1.9-2l1.7 2m-1.7-2v-2.8"
+    />
+    <path
+      id="yach17gh"
+      class="gh"
+      d="M810.3 508.1v-9.4m3.9 0h-7.4m6.3-2.8h-5.6m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach17"
+      class="tasarhai"
+      d="M795.6 542.3h11.6v-12.6h-11.6v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.7 2.9m-3.7-4.8l-3.6 3.1m3.6-3.1l3.7 3.1m-3.7 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.7m-11 3.7h-8.9m0 0V508m-2.2-8.5h4v8.2h-4v-8.2zm2.2 0v-2.9m-2.2.1h4.2m-.6-1.5h-3.3m.6-1.4h2.3m-3.2 9.6h4m-4 2.5h4m-4-4.6h4m5.5 4.9h3.6m-2-2l-1.7 2m1.7-2l1.9 2m-1.9-2v-2.8"
+    />
+    <path
+      id="yach19"
+      class="tasarhai"
+      d="M828.5 499.6v-2.9m-2.1 0h4.2m-.5-1.5h-3.3m.6-1.4h2.1m-2.9 9.6h4m-4 2.5h4m-4-4.6h4m5 4.9h3.7m-1.7-2l-1.9 2m1.9-2l1.8 2m-1.8-2v-2.8m-5.9 40.9h11.6v-12.6h-11.6v12.6zm5.9-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h8.9m0 0V508m-1.8 0h3.6m-10.7 3.7h-9.1m0 0V508m-1.9-8.4h4v8.2h-4v-8.2z"
+    />
+    <path
+      id="ych5gh"
+      class="gh"
+      d="M593.8 508.1v-9.4m3.6 0h-7.1m6.3-2.8H591m4.9-2.8h-4.3"
+    />
+    <path
+      id="yach5"
+      class="tasarhai"
+      d="M579 542.3h11.5v-12.6H579v12.6zm5.8-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m-.1 0V508m-1.8 0h3.6m-10.8 3.7h-9.1m0 0V508m-1.9-8.5h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.1.1h4.4m-.7-1.5H574m.7-1.4h2.1m-3 9.6h4m-4 2.5h4m-4-4.6h4m5.2 4.9h3.7m-1.9-2l-1.8 2m1.8-2l1.9 2m-1.9-2v-2.8"
+    />
+    <path
+      id="ych7gh_1_"
+      class="gh"
+      d="M629.9 508.1v-9.4m3.6 0h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach7"
+      class="tasarhai"
+      d="M615.1 542.3h11.6v-12.6h-11.6v12.6zM621 519l-3.7 2.9m3.7-2.9l3.6 2.9m-3.6-4.8l-3.7 3.1m3.7-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h8.9m0 0V508m-1.8 0h3.6m-10.7 3.7h-9.1m0 0V508m-2.1-8.5h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.3.1h4.4m-.7-1.5H610m.7-1.4h2.1m-3 9.6h4m-4 2.5h4m-4-4.6h4m5.3 4.9h3.6m-1.7-2l-1.9 2m1.9-2l1.7 2m-1.7-2v-2.8"
+    />
+    <path
+      id="yach9gh"
+      class="gh"
+      d="M666 508.1v-9.4m3.6 0h-7.1m6.3-2.8h-5.6m5.1-2.8h-4.6"
+    />
+    <path
+      id="yach9"
+      class="tasarhai"
+      d="M651.2 542.3h11.5v-12.6h-11.5v12.6zM657 519l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m-.1 0V508m-1.8 0h3.6m-10.8 3.7h-9.1m0 0V508m-2-8.4h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.1 0h4.4m-4-1.5h3.3m-2.6-1.4h2.1m-3 9.6h4m-4 2.5h4m-4-4.6h4m5.3 4.9h3.7m-1.9-2l-1.8 2m1.8-2l1.9 2m-1.9-2v-2.8"
+    />
+    <path
+      id="yach11gh"
+      class="gh"
+      d="M702.1 508.1v-9.4m3.6 0h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach11"
+      class="tasarhai"
+      d="M687.3 542.3h11.6v-12.6h-11.6v12.6zm5.9-23.3l-3.7 2.9m3.7-2.9l3.6 2.9m-3.6-4.8l-3.7 3.1m3.7-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h8.9m0 0V508m-1.8 0h3.6m-10.7 3.7h-9.1m0 0V508m-2-8.5h4.2v8.2h-4.2v-8.2zm2.1 0v-2.9m-2.3.1h4.4m-3.8-1.5h3.1m-2.6-1.4h2.1m-3 9.6h4.2m-4.2 2.5h4.2m-4.2-4.6h4.2m5 4.9h3.6m-1.7-2l-1.9 2m1.9-2l1.7 2m-1.7-2v-2.8"
+    />
+    <path
+      id="yach13_1_"
+      class="tasarhai"
+      d="M727.4 506.2h3.7m-2-2l1.9 2m-1.9 12.8l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.7m-11 3.7h-8.9m0 0V508m-2.1-8.5h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.2.1h4.4m-4-1.5h3.3m-2.6-1.4h2.3m-3.3 9.6h4m-4 2.5h4m-4-4.6h4m7 2.9l-1.8 2m1.8-2v-2.8m-5.7 40.9h11.5v-12.6h-11.5v12.6z"
+    />
+    <path
+      id="_x31_0kv1sekts"
+      class="tasarhai"
+      d="M873.5 555v7.3m36.2-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m-397.1-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-3m3.6 3v7.3m34.9-28.7v11m0-.1l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9V561m-.1-11.1h16.4m0 0v-3.7m-1.7 0h3.6m-18.1 3.7h-16.3m-.1 0v-5.5m-2-8.3h4v8.2h-4v-8.2zm2 0v-2.9m-2.2 0h4.4m-3.8-1.3h3.3m-2.7-1.3h2.1m-3.1 9.2h4m-4 2.4h4m-4-4.4h4m340.3 4.5v11m0 0l3.7-3.1m-3.7 3.1l-3.6-3.1m3.6 4.8l3.7-2.9m-3.7 2.9l-3.5-3M657 672.7v-10.8m0-.1l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m36.2 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-5l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-3.1v-7.1m35.9 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m-144.3 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.4 3.1m3.4-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m36.2 19.9v-10.8m0-.1l3.7 3m-3.7-3l-3.8 2.9m3.8-4.8l3.7 3.2m-3.7-3.2l-3.7 3.1m3.7-3.1v-7.1m144.4 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-5l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-3.1v-7.1m35.9 19.9v-10.8m0-.1l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-5l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-3.1v-7.1m36.3 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1L834 663m3.6-3.1v-7.1m-288.9 19.9v-10.8m0-.1l3.6 3.2m-3.6-3.2l-3.5 3.1m3.5-5l3.5 3.1m-3.5-3.1l-3.5 3.1m3.5-3.1v-7.1m-36.1 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1L509 663m3.6-3.1v-7.1m72.2-110.5v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m144.3-7.3l-3.6-2.9m3.6 2.9v7.3m36.3-20v11m0 0l3.6-3.1m-3.6 3.1l-3.7-3.1m3.7 4.8l3.6-2.9m-3.6 2.9l-3.7-2.9m3.7 2.9v7.3m35.9-20v11m0 0l3.7-3.1m-3.7 3.1l-3.6-3.1m3.6 4.8l3.7-2.9m-3.7 2.9l-3.6-2.9m3.6 2.9v7.3m36.3-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-3m3.6 3v7.3m-216.6-20v11m0 0l3.6-3.1m-3.6 3.1l-3.7-3.1m3.7 4.8l3.6-2.9M621 555l-3.7-2.9m3.7 2.9v7.3m36-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9M657 555l-3.6-2.9m3.6 2.9v7.3m36.2-20v11m0 0l3.6-3.1m-3.6 3.1l-3.7-3.1m3.7 4.8l3.6-2.9m-3.6 2.9l-3.7-2.9m3.7 2.9v7.3m35.9-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9"
+    />
+    <path
+      id="ych20gh"
+      class="gh"
+      d="M143.2 508.2v-9.4m3.3-.1h-7.1m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="ych20"
+      class="tasarhai"
+      d="M128.4 542.3h11.5v-12.6h-11.5v12.6zm5.8-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1m3.6-3.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m-.1 0V508m-1.9 0h3.6m-10.7 3.7h-9.1m0 0V508m-2.1-8.5h4.2v8.2H123v-8.2zm2.1 0v-2.9m-2.1.1h4.2m-3.6-1.5h3.3m-2.9-1.4h2.3m-3.3 9.6h4.2m-4.2 2.5h4.2m-4.2-4.6h4.2m5.1 4.9h3.7m-1.8-2l-1.9 2m1.9-2l1.8 2m-1.8-2v-2.8"
+    />
+    <path
+      id="ych18gh"
+      class="gh"
+      d="M179.2 508v-9.4m3.9 0h-7.4m6.6-2.8h-5.9m5.1-2.8h-4.3"
+    />
+    <path
+      id="yach18"
+      class="tasarhai"
+      d="M164.4 542.3H176v-12.6h-11.6v12.6zm5.7-23.3l-3.6 2.9m3.6-2.9l3.7 2.9m-3.7-4.8l-3.6 3.1m3.6-3.1l3.7 3.1m-3.7 9.5V519m0-1.9v-10.8m0 5.4h9.1m0 0V508m-1.8 0h3.7m-11 3.7h-8.9m0 0V508m-2.1-8.5h4v8.2h-4v-8.2zm2.1 0v-2.9m-2.3.1h4.4m-3.8-1.4h3.3m-2.7-1.5h2.3m-3.3 9.6h4m-4 2.5h4m-4-4.6h4m5.4 4.9h3.6m-2-2l-1.7 2m1.7-2l1.9 2m-1.9-2v-2.8"
+    />
+    <path
+      id="_x31_0kv1rsektsjijig"
+      class="tasarhai"
+      d="M459 555l3.6-2.9M459 555l-3.6-2.9m3.6 2.9v7.3m-36.2-12.1h16.6m.1 0v-3.7m-1.8 0h3.6m-18.5 3.7h-15.2m.1-.2v-3.7m-2.1-8.4h4v8.2h-4v-8.2zm1.9-.1V535m-1.9-.5h4.4m-3.8-1.3h3.3m-2.9-1.3h2.3m-3.3 9.6h4m-4 2.5h4m-4-4.4h4M242.5 672.7v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-5l3.6 3.1m-3.6-3.1l-3.7 3.1m3.7-3.1v-7.1m36 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1L275 663m3.5-3.1v-7.1m36.1 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1L311 663m3.6-3.1v-7.1m36.1 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m36.1 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m36.1 19.9v-10.8m0-.1l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-5l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-3.1v-7.1m36.1 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1M350.7 542.3v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m36.1-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m36-28.4v11m0-.1l3.7-3.1m-3.7 3.1l-3.6-3.1m3.6 4.8l3.7-2.9m-3.7 2.9l-3.6-2.9m3.6 2.9v14.6M97.9 542.3v11m0 0l3.7-3.1m-3.7 3.1l-3.6-3.1m3.6 4.8l3.7-2.9m-3.7 2.9l-3.6-2.9m3.6 2.9v7.3m-35.9-20v11m0 0l3.6-3.1m-3.6 3.1l-3.7-3.1M62 555l3.6-2.9M62 555l-3.7-2.9M62 555v7.3m72.2 110.4v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m35.9 19.9v-10.8m0-.1l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-5l3.7 3.1m-3.7-3.1l-3.6 3.1m3.6-3.1v-7.1m36.3 19.9v-10.8m0-.1l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-5l3.6 3.1m-3.6-3.1l-3.6 3.1m3.6-3.1v-7.1m36.1-110.5v11m0 0l3.6-3.1m-3.6 3.1l-3.7-3.1m3.7 4.8l3.6-2.9m-3.6 2.9l-3.7-2.9m3.7 2.9v7.3m36-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.5-3m3.5 3v7.3m36.1-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m-180.4-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3m35.9-20v11m0 0l3.7-3.1m-3.7 3.1l-3.6-3.1m3.6 4.8l3.7-2.9m-3.7 2.9l-3.6-2.9m3.6 2.9v7.3m36.3-20v11m0 0l3.6-3.1m-3.6 3.1l-3.6-3.1m3.6 4.8l3.6-2.9m-3.6 2.9l-3.6-2.9m3.6 2.9v7.3"
+    />
+    <path
+      id="yach16"
+      class="tasarhai"
+      d="M206.4 517.1l3.6 3.1m-3.6 9.5V519m0-1.9v-10.8m0 5.4h9.1m-.1 0V508m-1.9 0h3.6m-10.7 3.7h-9.1m0 0V508m-2-8.5h4v8.2h-4v-8.2zm1.9 0v-2.9m-2.1.1h4.2m-.4-1.4h-3.3m.5-1.5h2.3m-3.1 9.6h4m-4 2.5h4m-4-4.6h4m5.1 4.9h3.7m-1.7-2l-1.9 2m1.9-2l1.8 2m-1.8-2v-2.8m-5.8 40.9h11.5v-12.6h-11.5v12.6zm5.8-23.3l-3.6 2.9m3.6-2.9l3.6 2.9m-3.6-4.8l-3.6 3.1"
+    />
+    <path
+      id="_x33_5kv1rsektsjijig"
+      class="tasarhai"
+      d="M919.9 339.1v4.2m-71.8-2.2h71.8m-71.8 43.4h-12.6m0-1.8v3.7m12.6-131.6h-13m0-1.8v3.6m5.1-1.8v3.6m-1.8 0h3.6m77.6-47.2h-83.4m-.5-1.8v3.6m84.2 0v-3.7"
+    />
+    <path
+      id="_x31_0kv2rsektsgol"
+      class="shin"
+      d="M459 562.2H62m72.2 90.6H459m-72.2-90.6v90.6"
+    />
+    <path
+      id="_x31_0kv2rsektsgol_1_"
+      class="shin"
+      d="M909.7 562.2H512.6m325 90.6h-325m72.2-90.6v90.6"
+    />
+
+    <text transform="translate(16.575 585.437)">
+      <tspan x="0" y="0" class="st7 st8">10 кВ</tspan>
+      <tspan x="0" y="12" class="st7 st8">II секц</tspan>
+    </text>
+    <text transform="translate(924.729 585.436)">
+      <tspan x="0" y="0" class="st7 st8">10 кВ</tspan>
+      <tspan x="0" y="12" class="st7 st8">I секц</tspan>
+    </text>
+    <text transform="translate(57.076 574.27)" class="st7 st8">24</text>
+    <text transform="translate(93.159 574.27)" class="st7 st8">22</text>
+    <text transform="translate(129.242 574.27)" class="st7 st8">20</text>
+    <text transform="translate(164.395 574.27)" class="st7 st8">18</text>
+    <text transform="translate(201.828 574.27)" class="st7 st8">16</text>
+    <text transform="translate(234.67 574.27)" class="st7 st8">14</text>
+    <text transform="translate(274.017 574.27)" class="st7 st8">12</text>
+    <text transform="translate(308.772 574.27)" class="st7 st8">10</text>
+    <text transform="translate(344.993 574.27)" class="st7 st8">8</text>
+    <text transform="translate(373.66 574.27)" class="st7 st8">6</text>
+    <text transform="translate(130.723 645.77)" class="st7 st8">44</text>
+    <text transform="translate(165.876 645.77)" class="st7 st8">42</text>
+    <text transform="translate(203.31 645.77)" class="st7 st8">40</text>
+    <text transform="translate(236.151 645.77)" class="st7 st8">38</text>
+    <text transform="translate(275.498 645.77)" class="st7 st8">36</text>
+    <text transform="translate(310.253 645.77)" class="st7 st8">34</text>
+    <text transform="translate(346.474 645.77)" class="st7 st8">32</text>
+    <text transform="translate(375.14 645.77)" class="st7 st8">30</text>
+    <text transform="translate(417.18 645.77)" class="st7 st8">28</text>
+    <text transform="translate(452.361 645.77)" class="st7 st8">26</text>
+    <text transform="translate(419.349 574.27)" class="st7 st8">4</text>
+    <text transform="translate(455.367 574.27)" class="st7 st8">2</text>
+    <text transform="translate(509.635 577.52)" class="st7 st8">1</text>
+    <text transform="translate(544.02 577.52)" class="st7 st8">3</text>
+    <text transform="translate(512.581 645.77)" class="st7 st8">25</text>
+    <text transform="translate(546.966 645.77)" class="st7 st8">27</text>
+    <text transform="translate(588.34 577.52)" class="st7 st8">5</text>
+    <text transform="translate(617.292 577.52)" class="st7 st8">7</text>
+    <text transform="translate(652.43 577.52)" class="st7 st8">9</text>
+    <text transform="translate(687.313 577.52)" class="st7 st8">11</text>
+    <text transform="translate(723.406 577.52)" class="st7 st8">13</text>
+    <text transform="translate(760.84 577.52)" class="st7 st8">15</text>
+    <text transform="translate(795.594 577.52)" class="st7 st8">17</text>
+    <text transform="translate(831.688 577.52)" class="st7 st8">19</text>
+    <text transform="translate(867.782 577.52)" class="st7 st8">21</text>
+    <text transform="translate(904.004 577.52)" class="st7 st8">23</text>
+    <text transform="translate(589.297 645.77)" class="st7 st8">29</text>
+    <text transform="translate(618.25 645.77)" class="st7 st8">31</text>
+    <text transform="translate(653.387 645.77)" class="st7 st8">33</text>
+    <text transform="translate(688.27 645.77)" class="st7 st8">35</text>
+    <text transform="translate(724.363 645.77)" class="st7 st8">37</text>
+    <text transform="translate(761.797 645.77)" class="st7 st8">39</text>
+    <text transform="translate(796.551 645.77)" class="st7 st8">41</text>
+    <text transform="translate(832.645 645.77)" class="st7 st8">43</text>
+    <text transform="translate(30 53.313)" class="st7 st8">АШ-103</text>
+    <text transform="translate(57.625 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(58.333 131.47)" class="st7 st9">ШуС</text>
+    <text transform="translate(56.04 244.343)" class="st7 st9">ШинС</text>
+    <text transform="translate(56.084 475.612)">
+      <tspan x="0" y="0" class="st7 st9">Т-2 10кВ</tspan>
+      <tspan x="4" y="9.6" class="st7 st9">оролт</tspan>
+    </text>
+    <text transform="translate(89.724 475.612)" class="st7 st9">ДХТ-2</text>
+    <text transform="translate(118.636 475.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(154.73 475.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(191.78 475.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(227.875 475.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(263.968 475.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(299.999 475.612)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(336.157 475.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(372.25 475.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(417.409 475.592)" class="st7 st9">ХТ-2</text>
+    <text transform="translate(181.334 244.342)" class="st7 st9">ШинС-1</text>
+    <text transform="translate(240.21 274.488)" class="st7 st9">
+      110 кВ ХТ-2 ШинС
+    </text>
+    <text transform="translate(386.116 274.488)" class="st7 st9">
+      110 кВ ХТ-1 ШинС
+    </text>
+    <text transform="translate(180.265 203.092)" class="st7 st9">ШинС-2</text>
+    <text transform="translate(300.272 204.805)" class="st7 st9">ШинС-2</text>
+    <text transform="translate(241.74 203.093)" class="st7 st9">ШинС</text>
+    <text transform="translate(447.463 203.092)" class="st7 st9">ШинС</text>
+    <text transform="translate(388.833 238.858)" class="st7 st9">ШинС</text>
+    <text transform="translate(568.626 203.093)" class="st7 st9">ШинС</text>
+    <text transform="translate(118.918 203.092)" class="st7 st9">ШинС</text>
+    <text transform="translate(297.211 244.343)" class="st7 st9">ШинС-1</text>
+    <text transform="translate(345.386 354.587)">
+      <tspan x="0" y="0" class="st7 st9">35 кВ</tspan>
+      <tspan x="-4" y="9.6" class="st7 st9">НУОС-2</tspan>
+    </text>
+    <text transform="translate(385.053 354.92)">
+      <tspan x="0" y="0" class="st7 st9">35 кВ</tspan>
+      <tspan x="-4" y="9.6" class="st7 st9">НУОС-1</tspan>
+    </text>
+    <text transform="translate(366.558 405.17)">
+      <tspan x="0" y="0" class="st7 st9">35 кВ</tspan>
+      <tspan x="1.6" y="9.6" class="st7 st9">НУО</tspan>
+    </text>
+    <text transform="translate(509.711 238.859)" class="st7 st9">ШинС</text>
+    <text transform="translate(634.423 238.858)" class="st7 st9">ШинС</text>
+    <text transform="translate(652.237 209.539)">
+      <tspan x="0" y="0" class="st7 st9">110 кВ</tspan>
+      <tspan x="4.3" y="9.6" class="st7 st9">IIСШ</tspan>
+    </text>
+    <text transform="translate(652.085 253.587)">
+      <tspan x="0" y="0" class="st7 st9">110 кВ</tspan>
+      <tspan x="4.4" y="9.6" class="st7 st9">IСШ</tspan>
+    </text>
+    <text transform="translate(839.652 148.636)">
+      <tspan x="0" y="0" class="st7 st9">35кВ</tspan>
+      <tspan x="1.5" y="9.6" class="st7 st9">IСШ</tspan>
+    </text>
+    <text transform="translate(894.985 148.494)">
+      <tspan x="0" y="0" class="st7 st9">35кВ</tspan>
+      <tspan x="-.3" y="9.6" class="st7 st9">II СШ</tspan>
+    </text>
+    <text transform="translate(822.301 205.656)" class="st7 st9">ШинС</text>
+    <text transform="translate(822.3 248.552)" class="st7 st9">ШинС</text>
+    <text transform="translate(753.701 255.677)" class="st7 st9">
+      35кВ ХТ-1
+    </text>
+    <text transform="translate(962.535 300.205)" class="st7 st9">
+      35кВ ХТ-2
+    </text>
+    <text transform="translate(816.028 380.474)" class="st7 st9">ШинС-1</text>
+    <text transform="translate(740.361 380.974)" class="st7 st9">ШинС-2</text>
+    <text transform="translate(777.34 399.6)">
+      <tspan x="0" y="0" class="st7 st9">35 кВ</tspan>
+      <tspan x="3.3" y="9.6" class="st7 st9">СХТ</tspan>
+    </text>
+    <text transform="translate(914.188 205.656)" class="st7 st9">ШинС</text>
+    <text transform="translate(985.762 205.656)" class="st7 st9">ШуС</text>
+    <text transform="translate(985.253 247.595)" class="st7 st9">ШуС</text>
+    <text transform="translate(986.527 332.845)" class="st7 st9">ШуС</text>
+    <text transform="translate(986.527 378.643)" class="st7 st9">ШуС</text>
+    <text transform="translate(938.24 189.24)">
+      <tspan x="0" y="0" class="st7 st9">Олимп-А</tspan>
+      <tspan x="2" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(940.963 234.304)">
+      <tspan x="0" y="0" class="st7 st9">Олимп-Б</tspan>
+      <tspan x="1.7" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(936.875 320.804)">
+      <tspan x="0" y="0" class="st7 st9">Дорнод-1А</tspan>
+      <tspan x="5.8" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(938.14 366.47)">
+      <tspan x="0" y="0" class="st7 st9">Дорнод-1Б</tspan>
+      <tspan x="5.5" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(915.938 249.062)" class="st7 st9">ШинС</text>
+    <text transform="translate(915.282 335.812)" class="st7 st9">ШинС</text>
+    <text transform="translate(913.157 380.174)" class="st7 st9">ШинС</text>
+    <text transform="translate(822.3 294.133)" class="st7 st9">ШинС</text>
+    <text transform="translate(778.327 189.24)">
+      <tspan x="0" y="0" class="st7 st9">Т-1 35кВ</tspan>
+      <tspan x="0" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(783.994 277.74)">
+      <tspan x="0" y="0" class="st7 st9">Т-2 35кВ</tspan>
+      <tspan x="0" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(744.093 205.656)" class="st7 st9">ТрС</text>
+    <text transform="translate(745.489 290.911)" class="st7 st9">ТрС</text>
+    <text transform="translate(62.062 171.836)">
+      <tspan x="0" y="0" class="st7 st9">АШ-103</tspan>
+      <tspan x="-.2" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(123.062 171.837)">
+      <tspan x="0" y="0" class="st7 st9">АШ-104</tspan>
+      <tspan x="-.2" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(187.539 171.836)">
+      <tspan x="0" y="0" class="st7 st9">ТойТ</tspan>
+      <tspan x="-5" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(245.086 171.837)">
+      <tspan x="0" y="0" class="st7 st9">Т-2 110кВ</tspan>
+      <tspan x="2.9" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(456.053 170.433)">
+      <tspan x="0" y="0" class="st7 st9">АШ-106</tspan>
+      <tspan x="-.2" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(513.553 170.433)">
+      <tspan x="0" y="0" class="st7 st9">АШ-105</tspan>
+      <tspan x="-.2" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(576.697 170.433)">
+      <tspan x="0" y="0" class="st7 st9">Суруга-Б</tspan>
+      <tspan x="1.8" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(635.182 170.433)">
+      <tspan x="0" y="0" class="st7 st9">Суруга-А</tspan>
+      <tspan x="2.1" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(389.586 171.837)">
+      <tspan x="0" y="0" class="st7 st9">Т-1 110кВ</tspan>
+      <tspan x="2.9" y="9.6" class="st7 st9">таслуур</tspan>
+    </text>
+    <text transform="translate(305.451 151.493)">
+      <tspan x="0" y="0" class="st7 st9">110кВ</tspan>
+      <tspan x="3.6" y="9.6" class="st7 st9">СХТ</tspan>
+    </text>
+    <text transform="translate(120.213 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(181.334 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(241.74 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(386.116 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(447.335 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(508.81 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(568.626 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(631.632 92.396)" class="st7 st9">ТойС</text>
+    <text transform="translate(120.922 131.47)" class="st7 st9">ШуС</text>
+    <text transform="translate(244.8 131.47)" class="st7 st9">ТрС</text>
+    <text transform="translate(386.116 131.47)" class="st7 st9">ТрС</text>
+    <text transform="translate(447.463 130.22)" class="st7 st9">ШуС</text>
+    <text transform="translate(507.459 130.22)" class="st7 st9">ШуС</text>
+    <text transform="translate(570.157 130.22)" class="st7 st9">ШуС</text>
+    <text transform="translate(631.632 130.22)" class="st7 st9">ШуС</text>
+    <text transform="translate(87.813 53.313)" class="st7 st8">АШ-104</text>
+    <text transform="translate(162.313 53.313)" class="st7 st8">ТойТ</text>
+    <text transform="translate(228.813 53.313)" class="st7 st8">Т-2</text>
+    <text transform="translate(373.313 53.313)" class="st7 st8">Т-1</text>
+    <text transform="translate(420.23 53.313)" class="st7 st8">АШ-106</text>
+    <text transform="translate(477.896 53.313)" class="st7 st8">АШ-105</text>
+    <text transform="translate(540.063 53.313)" class="st7 st8">Суруга-Б</text>
+    <text transform="translate(600.813 53.313)" class="st7 st8">Суруга-А</text>
+    <text transform="translate(197.285 367.309)" class="st7 st10">Т-2</text>
+    <text transform="translate(554.248 361.652)" class="st7 st10">Т-1</text>
+    <text transform="translate(542.744 475.591)" class="st7 st9">ХТ-1</text>
+    <text transform="translate(505.99 475.592)" class="st7 st9">СХТ</text>
+    <text transform="translate(452.09 475.592)" class="st7 st9">СХС</text>
+    <text transform="translate(569.135 475.916)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(605.229 475.915)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(642.28 475.916)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(678.374 475.916)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(714.467 475.917)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(750.498 475.591)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(786.656 475.916)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(822.75 475.916)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(507.764 741.937)" class="st7 st9">Р-1</text>
+    <text transform="translate(534.69 741.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(571.741 741.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(607.835 741.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(643.929 741.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(679.96 741.612)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(716.117 741.936)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(752.211 741.937)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(789.45 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(825.544 742.098)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(200.81 742.098)" class="st7 st9">Р-2</text>
+    <text transform="translate(227.735 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(122.142 742.098)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(158.235 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(264.786 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(300.88 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(336.974 742.098)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(373.005 741.773)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(409.162 742.097)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(445.256 742.098)" class="st7 st9">Шугам-1</text>
+    <text transform="translate(865.629 475.937)" class="st7 st9">ДХТ-1</text>
+    <text transform="translate(899.522 475.592)">
+      <tspan x="0" y="0" class="st7 st9">Т-1 10кВ</tspan>
+      <tspan x="4" y="9.6" class="st7 st9">оролт</tspan>
+    </text>
+    <path
+      id="T1SASGH"
+      class="gh"
+      d="M447 371.5v-5m3.8 5h-8.1m1.7 2.8h4.9m-3.9 2.7h2.8m1.7-10.5h-5.4"
+    />
+    <path id="T2SAS2" class="salguur" d="M242.9 367.9v-9" />
+    <path
+      id="t2SASGH"
+      class="gh"
+      d="M242.9 372.9v-5m-4.2 5h8.1m-6.6 2.9h4.9m-1 2.7h-2.8m-.9-10.6h5.4"
+    />
+
+    <path
+      id="transformator1"
+      class="tasarhai"
+      d="M516.3 351.3v-2l-.4-1.9-.5-1.9-.8-1.9-.9-1.7-1.1-1.7-1.3-1.7-1.4-1.3-1.7-1.1-1.7-1.1-1.9-.8-1.9-.6-1.9-.5-1.9-.3H497l-2 .3-1.9.5-1.9.6-1.8.8-1.7 1.1-1.7 1.1-1.4 1.3-1.3 1.7-1.1 1.7-.9 1.7-.8 1.9-.5 1.9-.4 1.9-.1 2 .1 2 .4 2 .5 1.9.8 1.8.9 1.8 1.1 1.5 1.3 1.7 1.4 1.4 1.7 1.1 1.7 1 1.8.9 1.9.5 1.9.5 2 .3h1.9l1.9-.3 1.9-.5 1.9-.5 1.9-.9 1.7-1 1.7-1.1 1.4-1.4 1.3-1.7 1.1-1.5.9-1.8.8-1.8.5-1.9.4-2v-2zm16.7 25l-.1-1.9-.4-2-.5-1.9-.8-1.9-.9-1.7-1.1-1.7-1.3-1.5-1.4-1.4-1.7-1.1-1.7-1-1.8-.9-1.9-.6-1.9-.4-2-.3h-1.9l-2 .3-1.9.4-1.9.6-1.8.9-1.7 1-1.7 1.1-1.4 1.4-1.3 1.5-1.1 1.7-.9 1.7-.8 1.9-.5 1.9-.4 2v3.9l.4 2 .5 1.9.8 1.8.9 1.8 1.1 1.7 1.3 1.5 1.4 1.4 1.7 1.1 1.7 1 1.8.9 1.9.5 1.9.5 2 .3h1.9l2-.3 1.9-.5 1.9-.5 1.8-.9 1.7-1 1.7-1.1 1.4-1.4 1.3-1.5 1.1-1.7.9-1.8.8-1.8.5-1.9.4-2 .1-2zm-29.7 0v-1.9l-.4-2-.5-1.9-.8-1.8-.9-1.8-1.1-1.7-1.3-1.5-1.4-1.4-1.7-1.1-1.7-1-1.8-.9-1.9-.6-2-.4-1.9-.3H484l-2 .3-1.9.4-1.9.6-1.8.9-1.7 1-1.7 1.1-1.4 1.4-1.3 1.5-1.1 1.7-.9 1.8-.8 1.8-.5 1.9-.4 2-.1 1.9.1 2 .4 2 .5 1.9.8 1.8.9 1.8 1.1 1.7 1.3 1.5 1.4 1.4 1.7 1.1 1.7 1 1.8.9 1.9.6 1.9.4 2 .3h1.9l1.9-.3 2-.4 1.9-.6 1.8-.9 1.7-1 1.7-1.1 1.4-1.4 1.3-1.5 1.1-1.7.9-1.8.8-1.8.5-1.9.4-2v-2zm-102-8.2v3.6m0-1.9h24.5m0 0v-45.3m0 0h129.9m0 0l-26.4 41.6m-44.4 29.6v43.9m0 0h454.8m0 0v48m-30 0h30M532.8 374.4h153.4m0 0V211.2M363.9 322.4L486 337.3m260.2-127.9v3.6m0-1.8h-60m52.7 3.6v-3.6m-1.8 3.6h3.6M363.9 108.5h16.3m0 14.3V94.2m0 7.2h3.6m0 1.8v-3.6m-5.3-5.4h3.6m-3.6 28.6h3.6m-1.9-7.5h3.6m0 1.9v-3.7m-19.9-5v213.9m134 21.4v7m6.5 5.9l-6.5-5.9m-4.8 5.9l4.8-5.9m15.9 15.5v7m0-.1l6.5 5.9m-6.5-5.9l-4.8 5.9m-25.2-10l-7.3 11.6m.1 0h14.1m-6.9-11.6l6.8 11.6m-43.6-30h50.9m-50.9 0v6.5m-2.9.2h5.4 M455.1 366.5v-9.1M460.5 366.5v-9.1M455.1 357.4h5.4M455.1 359.1h5.4M455.1 361.7h5.4M455.1 364.1h5.4M457.8 357.2V351 M457.6 366.5v2.6M455.5 369.1h4.2M456.3 371h2.6M456.8 372.6h1.5M455.1 366.5h5.4"
+    />
+
+    <path
+      id="transformator2"
+      class="tasarhai"
+      d="M311.4 352.2l-.1-2-.4-1.9-.5-1.9-.8-1.9-.9-1.7-1.1-1.7-1.3-1.7-1.4-1.3-1.7-1.1-1.7-1.1-1.8-.8-1.9-.6-1.9-.5-2-.3H292l-2 .3-1.9.5-1.9.6-1.8.8-1.7 1.1-1.7 1.1-1.4 1.3-1.3 1.7-1.1 1.7-.9 1.7-.8 1.9-.5 1.9-.4 1.9-.1 2 .1 2 .4 2 .5 1.9.8 1.8.9 1.8 1.1 1.5 1.3 1.7 1.4 1.4 1.7 1.1 1.7 1 1.8.9 1.9.5 1.9.5 2 .3h1.9l2-.3 1.9-.5 1.9-.5 1.8-.9 1.7-1 1.7-1.1 1.4-1.4 1.3-1.7 1.1-1.5.9-1.8.8-1.8.5-1.9.4-2 .1-2zm18.3 23.7l-.1-1.9-.3-2-.6-1.9-.8-1.9-.8-1.7-1.1-1.7-1.4-1.5-1.4-1.4-1.7-1.1-1.5-1-1.9-.9-1.9-.6-1.9-.4-2-.3h-1.9l-1.9.3-1.9.4-1.9.6-1.9.9-1.7 1-1.7 1.1-1.4 1.4-1.3 1.5-1.1 1.7-.9 1.7-.8 1.9-.5 1.9-.3 2-.1 1.9.1 2 .3 2 .5 1.9.8 1.8.9 1.8 1.1 1.7 1.3 1.5 1.4 1.4 1.7 1.1 1.7 1 1.9.9 1.9.5 1.9.5 1.9.3h1.9l2-.3 1.9-.5 1.9-.5 1.9-.9 1.5-1 1.7-1.1 1.4-1.4 1.4-1.5 1.1-1.7.8-1.8.8-1.8.6-1.9.3-2 .1-2zm-31.7.8l-.1-1.9-.3-2-.6-1.9-.8-1.8-.9-1.8-1-1.7-1.4-1.5-1.4-1.4-1.7-1.1-1.7-1-1.8-.9-1.9-.6-1.9-.4-2-.3h-1.9l-1.9.3-1.9.4-1.9.6-1.9.9-1.7 1-1.7 1.1-1.4 1.4-1.3 1.5-1.1 1.7-.9 1.8-.8 1.8-.5 1.9-.4 2v3.9l.4 2 .5 1.9.8 1.8.9 1.8 1.1 1.7 1.3 1.5 1.4 1.4 1.7 1.1 1.7 1 1.9.9 1.9.6 1.9.4 1.9.3h1.9l2-.3 1.9-.4 1.9-.6 1.8-.9 1.7-1 1.7-1.1 1.4-1.4 1.4-1.5 1-1.7.9-1.8.8-1.8.6-1.9.3-2 .1-2zm51.9-8.6v3.6m0-1.9h-10.8m-9.4 7.5l9.3-7.4m-62.2 24.8v44.9m0 0H30m0 0v51.7m31.5 0H30m296-104.2l43.6 33.4m.1 0h345.6m0 0V297.8m30.9-1.7v3.6m0-1.9h-30.9m23.6 3.7v-3.7m-1.8 3.7h3.6M234.1 94.2h3.6m-1.8 14.3H225m-1.8 0h-1.8m.1 0h-1.9m-.1 212.1l60.1 18.8m-43.7-216.6V94.2m0 7.2h3.6m-.1 1.8v-3.6m-5.3 23.2h3.6m-1.8-7.5h3.6m-.1 1.9v-3.7m-14.4-5h-1.8m-3.7 0v212.1m73.8 30.7v-7.6m0 7.6l-5.9 5.4m11.1-.1l-5.2-5.3m18.7 25.1v-7.6m0 7.6l-5.9 5.4m5.9-5.4l5.2 5.3m-37.5-11.9l-7.3 11.1m-.1.8h14.4m.1 0l-7.1-11.8m-26.3-3.2v2.7m-2.1 0h4.2m-3.4 1.8h2.6m1.6-4.5h-5.4m0-9v9m5.4 0v-9m-5.4 0h5.4m-5.4 1.6h5.4m-5.4 2.6h5.4m0 2.4h-5.4m2.7-13.1v6.3m-10.7-6.3h50.4m-50.4 7.5v-7.5m-2.7 7.5h5.8"
+    />
+  </svg>
+
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

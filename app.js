@@ -1,94 +1,107 @@
-var activePlayer;
-var scores;
-var roundScore;
-var isNewGame;
-
-initGame();
-
-function initGame() {
-  isNewGame = true;
-  activePlayer = 0;
-
-  scores = [0, 0];
-
-  roundScore = 0;
-
-  document.getElementById("score-0").textContent = "0";
-
-  document.getElementById("score-1").textContent = "0";
-  document.getElementById("current-0").textContent = "0";
-  document.getElementById("current-1").textContent = "0";
-  document.querySelector(".dice").style.display = "none";
-
-  document.getElementById("name-0").textContent = "Player-1";
-  document.getElementById("name-1").textContent = "Player-2";
-
-  document.querySelector(".player-0-panel").classList.remove("winner");
-  document.querySelector(".player-1-panel").classList.remove("winner");
-
-  document.querySelector(".player-0-panel").classList.remove("active");
-  document.querySelector(".player-1-panel").classList.remove("active");
-
-  document.querySelector(".player-0-panel").classList.add("active");
+function check_class(classN1,classN,tas,zal){
+  if(hasClass(classN1,zal) ==true){
+    $(classN).removeClass(tas);
+    $(classN).addClass(zal);
+  }
+}
+function zalgah(id){
+    $('.'+id).removeClass('tasarhai');
+    $('.'+id).addClass('zalgaatai');
+}
+function taslah(id){
+      $('.'+id).removeClass('zalgaatai');
+      $('.'+id).addClass('tasarhai');
 }
 
-var inHtmlclass = document.querySelector(".dice");
+$( "button" ).click(function() {
+  var id = $(this).attr('data-id');
+  var type = $(this).attr('data-value');
+  if(type == 'zalgah'){
+    zalgah(id);
+    if(id =='103shus'){
+        check_class('.ash103','.gt103','tasarhai','zalgaatai');
+      }
+    } 
+  if(type == 'taslah'){
+       taslah(id);
+      $('#toissh110kv').removeClass('shinzalgaatai');
+      $('#toissh110kv').addClass('shin');
+      if(id =='103shus'){
 
-document.querySelector(".btn-roll").addEventListener("click", function () {
-  if (isNewGame === true) {
-    var diceNumber = Math.floor(Math.random() * 6) + 1;
+        $('#110kv1rssh').removeClass('shinzalgaatai');
+        $('#110kv1rssh').addClass('shin');
 
-    inHtmlclass.style.display = "block";
-    inHtmlclass.src = "dice-" + diceNumber + ".png";
+      if(hasClass('.ash103','zalgaatai') ==true){
+        $('.gt103').removeClass('zalgaatai');
+        $('.gt103').addClass('tasarhai');
+        $('#shinsghtai103').removeClass('zalgaatai');
+        $('#shinsghtai103').addClass('tasarhai');
+      }
 
-    if (diceNumber !== 1) {
-      roundScore = roundScore + diceNumber;
-      document.getElementById(
-        "current-" + activePlayer
-      ).textContent = roundScore;
-    } else {
-      switchToNextPlayer();
     }
-  } else {
-    alert("Тоглоом дууссан");
-  }
-});
-// hold event
-document.querySelector(".btn-hold").addEventListener("click", function () {
-  if (isNewGame) {
-    scores[activePlayer] = scores[activePlayer] + roundScore;
+      if(id =='ash103'){
+      if(hasClass('.gt103','zalgaatai') ==true){
+        $('.gt103').removeClass('zalgaatai');
+        $('.gt103').addClass('tasarhai');
 
-    document.getElementById("score-" + activePlayer).textContent =
-      scores[activePlayer];
-
-    if (scores[activePlayer] >= 100) {
-      document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
-      document
-        .querySelector(".player-" + activePlayer + "-panel")
-        .classList.toggle("winner");
-      document
-        .querySelector(".player-" + activePlayer + "-panel")
-        .classList.toggle("active");
-
-      isNewGame = false;
-    } else {
-      switchToNextPlayer();
+      }
+      if(hasClass('#shinsghtai103','zalgaatai') ==true){
+   
+        $('#shinsghtai103').removeClass('zalgaatai');
+        $('#shinsghtai103').addClass('tasarhai');
+      }
     }
-  } else {
-    alert("Тоглоом дууссан байна.");
   }
+  if(type == 'zalguur'){
+      $('.'+id).removeClass('salguur');
+      $('.'+id).addClass('salgzalgaatai');
+          if(id == 'tois103'){
+          $('#toissh110kv').removeClass('shin');
+          $('#toissh110kv').addClass('shinzalgaatai');
+    }
+        if(id == 'shins103'){
+      if(hasClass('.ash103','zalgaatai') ==true){
+        $('#110kv1rssh').removeClass('shin');
+        $('#110kv1rssh').addClass('shinzalgaatai');
+
+      }
+    }
+  }
+    if(type == 'salguur'){
+      $('.'+id).removeClass('salgzalgaatai');
+      $('.'+id).addClass('salguur');
+    if(id == 'tois103'){
+      $('#toissh110kv').removeClass('shinzalgaatai');
+      $('#toissh110kv').addClass('shin');
+    }
+  }
+   if(type == 'tasluurzalgah'){
+
+      $('.'+id).removeClass('ettasarhai');
+      $('.'+id).addClass('etzalgaatai');
+      if(hasClass('.ash103','zalgaatai')==true && hasClass('.103shus','zalgaatai')==true){
+      
+          $('#shinsghtai103').removeClass('tasarhai');
+          $('#shinsghtai103').addClass('zalgaatai');
+      }
+      else{
+        alert();
+      }
+   }
+   if(type == 'tasluurtaslah'){
+    if(id == 'tasluur103'){
+              $('#110kv1rssh').removeClass('shinzalgaatai');
+        $('#110kv1rssh').addClass('shin');
+    }
+      $('.'+id).addClass('ettasarhai');
+      $('.'+id).removeClass('etzalgaatai');
+
+   }
+  
 });
 
-function switchToNextPlayer() {
-  document.getElementById("current-" + activePlayer).textContent = 0;
-  activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
-  roundScore = 0;
-  document.querySelector(".player-0-panel").classList.toggle("active");
-  document.querySelector(".player-1-panel").classList.toggle("active");
-  inHtmlclass.style.display = "none";
+function hasClass(element, cls) {
+    return $(element).hasClass(cls);
 }
 
-//new game
-document.querySelector(".btn-new").addEventListener("click", function () {
-  initGame();
-});
+
